@@ -25,8 +25,4 @@ Abaixo estão listados os relatórios detalhados de cada bateria de testes reali
 
 * **[Relatório de Testes - 07/04/2026](./bugs/070426/070426.md)** - Foco: Cadastro de usuários, gerenciamento de turmas e upload de perfil.
 
-<<<<<<< HEAD
----
-=======
----
->>>>>>> bb06e77b1dafa21c4271396dcec1a95720e9ffa4
+
