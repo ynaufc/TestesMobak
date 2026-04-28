@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.3 on linux)" generated="2026-04-28T01:21:57.372832" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Selectors" source="/home/any/Área de trabalho/TestesMobak/bugs/280426/test_selectors.robot">
+<test id="s1-t1" name="Test Find Elements" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T01:21:57.687505" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<arg>https://lampi.ifce.edu.br/mobak/login</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T01:21:57.686906" elapsed="2.133487"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T01:21:59.821058" elapsed="0.077603"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.space-y-6 &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; input:nth-child(2)</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-28T01:21:59.899318" elapsed="0.164432"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-28T01:22:00.064982" level="INFO">Campo usuario encontrado</msg>
+<arg>Campo usuario encontrado</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-28T01:22:00.064214" elapsed="0.000957"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.space-y-6 &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; input:nth-child(2)</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-28T01:22:00.065681" elapsed="0.037427"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-28T01:22:00.104183" level="INFO">Campo senha encontrado</msg>
+<arg>Campo senha encontrado</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-28T01:22:00.103620" elapsed="0.000694"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=button.w-full</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-28T01:22:00.104634" elapsed="0.032738"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-28T01:22:00.138332" level="INFO">Botao login encontrado</msg>
+<arg>Botao login encontrado</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-28T01:22:00.137779" elapsed="0.000655"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T01:22:00.138726" elapsed="0.197740"/>
+</kw>
+<doc>Test if selectors are correct</doc>
+<status status="PASS" start="2026-04-28T01:21:57.684765" elapsed="2.652119"/>
+</test>
+<status status="PASS" start="2026-04-28T01:21:57.374734" elapsed="2.962927"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Selectors" id="s1" pass="1" fail="0" skip="0">Test Selectors</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
