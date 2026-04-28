@@ -1,1474 +1,1474 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.3 on linux)" generated="2026-04-28T08:05:05.086734" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.12.3 on linux)" generated="2026-04-28T08:12:36.677763" rpa="false" schemaversion="5">
 <suite id="s1" name="Error Tests" source="/home/any/Área de trabalho/TestesMobak/bugs/280426/error_tests.robot">
 <test id="s1-t1" name="Scenario: Login with empty username" line="14">
 <kw name="Given I am on the Mobak login page">
 <kw name="Open Mobak Login Page" owner="login_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:05.529874" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<msg time="2026-04-28T08:12:37.016707" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-28T08:05:05.529103" elapsed="3.228059"/>
+<status status="PASS" start="2026-04-28T08:12:37.016134" elapsed="2.057066"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-28T08:05:08.757552" elapsed="0.112896"/>
+<status status="PASS" start="2026-04-28T08:12:39.073666" elapsed="0.065700"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USER_FIELD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-28T08:05:08.870775" elapsed="0.114388"/>
+<status status="PASS" start="2026-04-28T08:12:39.139835" elapsed="0.055961"/>
 </kw>
 <doc>Opens the browser and navigates to login page</doc>
-<status status="PASS" start="2026-04-28T08:05:05.528296" elapsed="3.457097"/>
+<status status="PASS" start="2026-04-28T08:12:37.015618" elapsed="2.180392"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:05.527363" elapsed="3.458216"/>
+<status status="PASS" start="2026-04-28T08:12:37.014741" elapsed="2.181406"/>
 </kw>
 <kw name="When I fill credentials">
 <kw name="Input Username" owner="login_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:08.988380" level="INFO">Typing text '' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
+<msg time="2026-04-28T08:12:39.198996" level="INFO">Typing text '' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
 <arg>${USER_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:08.987954" elapsed="0.182767"/>
+<status status="PASS" start="2026-04-28T08:12:39.198577" elapsed="0.279512"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-28T08:05:08.987438" elapsed="0.183489"/>
+<status status="PASS" start="2026-04-28T08:12:39.198045" elapsed="0.280249"/>
 </kw>
 <kw name="Input User Password" owner="login_resources">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:09.172334" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
-<msg time="2026-04-28T08:05:09.239805" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-28T08:12:39.479947" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
+<msg time="2026-04-28T08:12:39.551061" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASS_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:09.171835" elapsed="0.197021"/>
+<status status="PASS" start="2026-04-28T08:12:39.479383" elapsed="0.186333"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-28T08:05:09.171244" elapsed="0.197822"/>
+<status status="PASS" start="2026-04-28T08:12:39.478657" elapsed="0.187268"/>
 </kw>
 <arg>${EMPTY}</arg>
 <arg>senha123</arg>
-<status status="PASS" start="2026-04-28T08:05:08.986112" elapsed="0.383077"/>
+<status status="PASS" start="2026-04-28T08:12:39.196733" elapsed="0.469312"/>
 </kw>
 <kw name="And I click the login button">
 <kw name="Submit Login" owner="login_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:09.371168" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
+<msg time="2026-04-28T08:12:39.668025" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:09.370808" elapsed="0.176020"/>
+<status status="PASS" start="2026-04-28T08:12:39.667676" elapsed="0.168103"/>
 </kw>
 <doc>Clicks the login button</doc>
-<status status="PASS" start="2026-04-28T08:05:09.370326" elapsed="0.176701"/>
+<status status="PASS" start="2026-04-28T08:12:39.667244" elapsed="0.168739"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:09.369773" elapsed="0.177372"/>
+<status status="PASS" start="2026-04-28T08:12:39.666685" elapsed="0.169442"/>
 </kw>
 <kw name="Then I should see an error message">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:14.854056" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-118.png"&gt;&lt;img src="selenium-screenshot-118.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:14.854344" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:12:45.120872" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-146.png"&gt;&lt;img src="selenium-screenshot-146.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:12:45.121154" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
 <arg>css=.error-message</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:05:09.549113" elapsed="5.308275">Element 'css=.error-message' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:12:39.838169" elapsed="5.285313">Element 'css=.error-message' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:05:14.857774" level="INFO">${check1} = False</msg>
+<msg time="2026-04-28T08:12:45.123794" level="INFO">${check1} = False</msg>
 <var>${check1}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=.error-message</arg>
 <arg>timeout=5s</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:09.548305" elapsed="5.309533"/>
+<status status="PASS" start="2026-04-28T08:12:39.837310" elapsed="5.286544"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:20.152172" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-119.png"&gt;&lt;img src="selenium-screenshot-119.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:20.152440" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:12:50.422107" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-147.png"&gt;&lt;img src="selenium-screenshot-147.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:12:50.422488" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:05:14.858805" elapsed="5.294422">Element 'css=[class*='error']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:12:45.124784" elapsed="5.298851">Element 'css=[class*='error']' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:05:20.153523" level="INFO">${check2} = False</msg>
+<msg time="2026-04-28T08:12:50.424044" level="INFO">${check2} = False</msg>
 <var>${check2}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=5s</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:14.858129" elapsed="5.295453"/>
+<status status="PASS" start="2026-04-28T08:12:45.124118" elapsed="5.300004"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:20.396880" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-120.png"&gt;&lt;img src="selenium-screenshot-120.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:20.397107" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
+<msg time="2026-04-28T08:12:50.665445" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-148.png"&gt;&lt;img src="selenium-screenshot-148.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:12:50.665679" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
 <arg>Invalid</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-28T08:05:20.154532" elapsed="0.252112">Page should have contained text 'Invalid' but did not.</status>
+<status status="FAIL" start="2026-04-28T08:12:50.425241" elapsed="0.241412">Page should have contained text 'Invalid' but did not.</status>
 </kw>
-<msg time="2026-04-28T08:05:20.407039" level="INFO">${check3} = False</msg>
+<msg time="2026-04-28T08:12:50.666922" level="INFO">${check3} = False</msg>
 <var>${check3}</var>
 <arg>Page Should Contain</arg>
 <arg>Invalid</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:20.153864" elapsed="0.253265"/>
+<status status="PASS" start="2026-04-28T08:12:50.424447" elapsed="0.242549"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
-<msg time="2026-04-28T08:05:20.408654" level="FAIL">'False == True or False == True or False == True' should be true.</msg>
+<msg time="2026-04-28T08:12:50.668598" level="FAIL">'False == True or False == True or False == True' should be true.</msg>
 <arg>${check1} == True or ${check2} == True or ${check3} == True</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="FAIL" start="2026-04-28T08:05:20.407514" elapsed="0.001352">'False == True or False == True or False == True' should be true.</status>
+<status status="FAIL" start="2026-04-28T08:12:50.667318" elapsed="0.001465">'False == True or False == True or False == True' should be true.</status>
 </kw>
-<status status="FAIL" start="2026-04-28T08:05:09.547768" elapsed="10.861356">'False == True or False == True or False == True' should be true.</status>
+<status status="FAIL" start="2026-04-28T08:12:39.836765" elapsed="10.832319">'False == True or False == True or False == True' should be true.</status>
 </kw>
 <kw name="Close Session" owner="login_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-28T08:05:20.410190" elapsed="0.208510"/>
+<status status="PASS" start="2026-04-28T08:12:50.670234" elapsed="0.198252"/>
 </kw>
 <doc>Closes the browser</doc>
-<status status="PASS" start="2026-04-28T08:05:20.409705" elapsed="0.209189"/>
+<status status="PASS" start="2026-04-28T08:12:50.669716" elapsed="0.198959"/>
 </kw>
 <doc>Test login with empty username field</doc>
-<status status="FAIL" start="2026-04-28T08:05:05.523939" elapsed="15.095181">'False == True or False == True or False == True' should be true.</status>
+<status status="FAIL" start="2026-04-28T08:12:37.011238" elapsed="13.857635">'False == True or False == True or False == True' should be true.</status>
 </test>
 <test id="s1-t2" name="Scenario: Login with empty password" line="21">
 <kw name="Given I am on the Mobak login page">
 <kw name="Open Mobak Login Page" owner="login_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:20.622429" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<msg time="2026-04-28T08:12:50.871740" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-28T08:05:20.621791" elapsed="1.936092"/>
+<status status="PASS" start="2026-04-28T08:12:50.871308" elapsed="1.959193"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-28T08:05:22.558291" elapsed="0.070739"/>
+<status status="PASS" start="2026-04-28T08:12:52.830822" elapsed="0.055989"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USER_FIELD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-28T08:05:22.629462" elapsed="0.141798"/>
+<status status="PASS" start="2026-04-28T08:12:52.887108" elapsed="0.113877"/>
 </kw>
 <doc>Opens the browser and navigates to login page</doc>
-<status status="PASS" start="2026-04-28T08:05:20.621294" elapsed="2.150276"/>
+<status status="PASS" start="2026-04-28T08:12:50.870874" elapsed="2.130313"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:20.620735" elapsed="2.151017"/>
+<status status="PASS" start="2026-04-28T08:12:50.870329" elapsed="2.131020"/>
 </kw>
 <kw name="When I fill credentials">
 <kw name="Input Username" owner="login_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:22.774986" level="INFO">Typing text 'usuario' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
+<msg time="2026-04-28T08:12:53.004073" level="INFO">Typing text 'usuario' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
 <arg>${USER_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:22.774529" elapsed="0.536669"/>
+<status status="PASS" start="2026-04-28T08:12:53.003615" elapsed="0.218065"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-28T08:05:22.773926" elapsed="0.537469"/>
+<status status="PASS" start="2026-04-28T08:12:53.003062" elapsed="0.218829"/>
 </kw>
 <kw name="Input User Password" owner="login_resources">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:23.312710" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
-<msg time="2026-04-28T08:05:23.377266" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-28T08:12:53.223510" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
+<msg time="2026-04-28T08:12:53.292119" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASS_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:23.312295" elapsed="0.139191"/>
+<status status="PASS" start="2026-04-28T08:12:53.223028" elapsed="0.142280"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-28T08:05:23.311740" elapsed="0.139939"/>
+<status status="PASS" start="2026-04-28T08:12:53.222221" elapsed="0.143326"/>
 </kw>
 <arg>usuario</arg>
 <arg>${EMPTY}</arg>
-<status status="PASS" start="2026-04-28T08:05:22.772531" elapsed="0.679272"/>
+<status status="PASS" start="2026-04-28T08:12:53.001845" elapsed="0.363827"/>
 </kw>
 <kw name="And I click the login button">
 <kw name="Submit Login" owner="login_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:23.453474" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
+<msg time="2026-04-28T08:12:53.367347" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:23.453114" elapsed="0.165564"/>
+<status status="PASS" start="2026-04-28T08:12:53.367004" elapsed="0.165827"/>
 </kw>
 <doc>Clicks the login button</doc>
-<status status="PASS" start="2026-04-28T08:05:23.452731" elapsed="0.166208"/>
+<status status="PASS" start="2026-04-28T08:12:53.366611" elapsed="0.166442"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:23.452230" elapsed="0.166833"/>
+<status status="PASS" start="2026-04-28T08:12:53.366098" elapsed="0.167104"/>
 </kw>
 <kw name="Then I should see an error message">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:28.922905" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-121.png"&gt;&lt;img src="selenium-screenshot-121.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:28.923184" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:12:58.824284" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-149.png"&gt;&lt;img src="selenium-screenshot-149.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:12:58.824576" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
 <arg>css=.error-message</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:05:23.620958" elapsed="5.302983">Element 'css=.error-message' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:12:53.535175" elapsed="5.290469">Element 'css=.error-message' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:05:28.924218" level="INFO">${check1} = False</msg>
+<msg time="2026-04-28T08:12:58.826049" level="INFO">${check1} = False</msg>
 <var>${check1}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=.error-message</arg>
 <arg>timeout=5s</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:23.620228" elapsed="5.304052"/>
+<status status="PASS" start="2026-04-28T08:12:53.534484" elapsed="5.291650"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:34.220128" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-122.png"&gt;&lt;img src="selenium-screenshot-122.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:34.220381" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:13:04.108272" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-150.png"&gt;&lt;img src="selenium-screenshot-150.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:04.108540" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:05:28.925305" elapsed="5.295863">Element 'css=[class*='error']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:12:58.827438" elapsed="5.281948">Element 'css=[class*='error']' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:05:34.221497" level="INFO">${check2} = False</msg>
+<msg time="2026-04-28T08:13:04.109703" level="INFO">${check2} = False</msg>
 <var>${check2}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=5s</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:28.924577" elapsed="5.296982"/>
+<status status="PASS" start="2026-04-28T08:12:58.826551" elapsed="5.283209"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:34.465603" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-123.png"&gt;&lt;img src="selenium-screenshot-123.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:34.465828" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
+<msg time="2026-04-28T08:13:04.339561" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-151.png"&gt;&lt;img src="selenium-screenshot-151.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:04.339804" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
 <arg>Invalid</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-28T08:05:34.222469" elapsed="0.243880">Page should have contained text 'Invalid' but did not.</status>
+<status status="FAIL" start="2026-04-28T08:13:04.110637" elapsed="0.229802">Page should have contained text 'Invalid' but did not.</status>
 </kw>
-<msg time="2026-04-28T08:05:34.466626" level="INFO">${check3} = False</msg>
+<msg time="2026-04-28T08:13:04.340826" level="INFO">${check3} = False</msg>
 <var>${check3}</var>
 <arg>Page Should Contain</arg>
 <arg>Invalid</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:34.221838" elapsed="0.244844"/>
+<status status="PASS" start="2026-04-28T08:13:04.110023" elapsed="0.230889"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
-<msg time="2026-04-28T08:05:34.467894" level="FAIL">'False == True or False == True or False == True' should be true.</msg>
+<msg time="2026-04-28T08:13:04.342507" level="FAIL">'False == True or False == True or False == True' should be true.</msg>
 <arg>${check1} == True or ${check2} == True or ${check3} == True</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="FAIL" start="2026-04-28T08:05:34.466925" elapsed="0.001108">'False == True or False == True or False == True' should be true.</status>
+<status status="FAIL" start="2026-04-28T08:13:04.341286" elapsed="0.001378">'False == True or False == True or False == True' should be true.</status>
 </kw>
-<status status="FAIL" start="2026-04-28T08:05:23.619621" elapsed="10.848637">'False == True or False == True or False == True' should be true.</status>
+<status status="FAIL" start="2026-04-28T08:12:53.533829" elapsed="10.809103">'False == True or False == True or False == True' should be true.</status>
 </kw>
 <kw name="Close Session" owner="login_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-28T08:05:34.469339" elapsed="0.148028"/>
+<status status="PASS" start="2026-04-28T08:13:04.344199" elapsed="0.161852"/>
 </kw>
 <doc>Closes the browser</doc>
-<status status="PASS" start="2026-04-28T08:05:34.468849" elapsed="0.148733"/>
+<status status="PASS" start="2026-04-28T08:13:04.343625" elapsed="0.162716"/>
 </kw>
 <doc>Test login with empty password field</doc>
-<status status="FAIL" start="2026-04-28T08:05:20.619783" elapsed="13.997992">'False == True or False == True or False == True' should be true.</status>
+<status status="FAIL" start="2026-04-28T08:12:50.869484" elapsed="13.637168">'False == True or False == True or False == True' should be true.</status>
 </test>
 <test id="s1-t3" name="Scenario: Login with emojis in username" line="28">
 <kw name="Given I am on the Mobak login page">
 <kw name="Open Mobak Login Page" owner="login_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:34.620610" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<msg time="2026-04-28T08:13:04.510165" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-28T08:05:34.620165" elapsed="1.872301"/>
+<status status="PASS" start="2026-04-28T08:13:04.509731" elapsed="1.908307"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-28T08:05:36.492782" elapsed="0.064664"/>
+<status status="PASS" start="2026-04-28T08:13:06.418362" elapsed="0.074541"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USER_FIELD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-28T08:05:36.557788" elapsed="0.055678"/>
+<status status="PASS" start="2026-04-28T08:13:06.493294" elapsed="0.156653"/>
 </kw>
 <doc>Opens the browser and navigates to login page</doc>
-<status status="PASS" start="2026-04-28T08:05:34.619737" elapsed="1.993936"/>
+<status status="PASS" start="2026-04-28T08:13:04.509008" elapsed="2.141139"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:34.619206" elapsed="1.994589"/>
+<status status="PASS" start="2026-04-28T08:13:04.508375" elapsed="2.141893"/>
 </kw>
 <kw name="When I fill credentials">
 <kw name="Input Username" owner="login_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:36.615713" level="INFO">Typing text 'user😀🎉' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
-<msg time="2026-04-28T08:05:37.039182" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-124.png"&gt;&lt;img src="selenium-screenshot-124.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:37.039560" level="FAIL">WebDriverException: Message: unknown error: ChromeDriver only supports characters in the BMP
+<msg time="2026-04-28T08:13:06.652211" level="INFO">Typing text 'user😀🎉' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
+<msg time="2026-04-28T08:13:06.957934" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-152.png"&gt;&lt;img src="selenium-screenshot-152.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:06.958279" level="FAIL">WebDriverException: Message: unknown error: ChromeDriver only supports characters in the BMP
   (Session info: chrome=148.0.7778.56)
 Stacktrace:
-#0 0x56fc97b7531a &lt;unknown&gt;
-#1 0x56fc9756db39 &lt;unknown&gt;
-#2 0x56fc97603204 &lt;unknown&gt;
-#3 0x56fc975bd6d1 &lt;unknown&gt;
-#4 0x56fc975bb74a &lt;unknown&gt;
-#5 0x56fc975b6f77 &lt;unknown&gt;
-#6 0x56fc9760a1dc &lt;unknown&gt;
-#7 0x56fc975b573f &lt;unknown&gt;
-#8 0x56fc975b6501 &lt;unknown&gt;
-#9 0x56fc97b387bb &lt;unknown&gt;
-#10 0x56fc97b3b6bd &lt;unknown&gt;
-#11 0x56fc97b25608 &lt;unknown&gt;
-#12 0x56fc97b3c250 &lt;unknown&gt;
-#13 0x56fc97b0c030 &lt;unknown&gt;
-#14 0x56fc97b61c78 &lt;unknown&gt;
-#15 0x56fc97b61e15 &lt;unknown&gt;
-#16 0x56fc97b73d4e &lt;unknown&gt;
-#17 0x7f178809caa4 &lt;unknown&gt;
-#18 0x7f1788129c6c &lt;unknown&gt;
+#0 0x5acaf7f2e31a &lt;unknown&gt;
+#1 0x5acaf7926b39 &lt;unknown&gt;
+#2 0x5acaf79bc204 &lt;unknown&gt;
+#3 0x5acaf79766d1 &lt;unknown&gt;
+#4 0x5acaf797474a &lt;unknown&gt;
+#5 0x5acaf796ff77 &lt;unknown&gt;
+#6 0x5acaf79c31dc &lt;unknown&gt;
+#7 0x5acaf796e73f &lt;unknown&gt;
+#8 0x5acaf796f501 &lt;unknown&gt;
+#9 0x5acaf7ef17bb &lt;unknown&gt;
+#10 0x5acaf7ef46bd &lt;unknown&gt;
+#11 0x5acaf7ede608 &lt;unknown&gt;
+#12 0x5acaf7ef5250 &lt;unknown&gt;
+#13 0x5acaf7ec5030 &lt;unknown&gt;
+#14 0x5acaf7f1ac78 &lt;unknown&gt;
+#15 0x5acaf7f1ae15 &lt;unknown&gt;
+#16 0x5acaf7f2cd4e &lt;unknown&gt;
+#17 0x79860649caa4 &lt;unknown&gt;
+#18 0x798606529c6c &lt;unknown&gt;
 </msg>
 <arg>${USER_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2026-04-28T08:05:36.615286" elapsed="0.435806">WebDriverException: Message: unknown error: ChromeDriver only supports characters in the BMP
+<status status="FAIL" start="2026-04-28T08:13:06.651819" elapsed="0.309191">WebDriverException: Message: unknown error: ChromeDriver only supports characters in the BMP
   (Session info: chrome=148.0.7778.56)
 Stacktrace:
-#0 0x56fc97b7531a &lt;unknown&gt;
-#1 0x56fc9756db39 &lt;unknown&gt;
-#2 0x56fc97603204 &lt;unknown&gt;
-#3 0x56fc975bd6d1 &lt;unknown&gt;
-#4 0x56fc975bb74a &lt;unknown&gt;
-#5 0x56fc975b6f77 &lt;unknown&gt;
-#6 0x56fc9760a1dc &lt;unknown&gt;
-#7 0x56fc975b573f &lt;unknown&gt;
-#8 0x56fc975b6501 &lt;unknown&gt;
-#9 0x56fc97b387bb &lt;unknown&gt;
-#10 0x56fc97b3b6bd &lt;unknown&gt;
-#11 0x56fc97b25608 &lt;unknown&gt;
-#12 0x56fc97b3c250 &lt;unknown&gt;
-#13 0x56fc97b0c030 &lt;unknown&gt;
-#14 0x56fc97b61c78 &lt;unknown&gt;
-#15 0x56fc97b61e15 &lt;unknown&gt;
-#16 0x56fc97b73d4e &lt;unknown&gt;
-#17 0x7f178809caa4 &lt;unknown&gt;
-#18 0x7f1788129c6c &lt;unknown&gt;
+#0 0x5acaf7f2e31a &lt;unknown&gt;
+#1 0x5acaf7926b39 &lt;unknown&gt;
+#2 0x5acaf79bc204 &lt;unknown&gt;
+#3 0x5acaf79766d1 &lt;unknown&gt;
+#4 0x5acaf797474a &lt;unknown&gt;
+#5 0x5acaf796ff77 &lt;unknown&gt;
+#6 0x5acaf79c31dc &lt;unknown&gt;
+#7 0x5acaf796e73f &lt;unknown&gt;
+#8 0x5acaf796f501 &lt;unknown&gt;
+#9 0x5acaf7ef17bb &lt;unknown&gt;
+#10 0x5acaf7ef46bd &lt;unknown&gt;
+#11 0x5acaf7ede608 &lt;unknown&gt;
+#12 0x5acaf7ef5250 &lt;unknown&gt;
+#13 0x5acaf7ec5030 &lt;unknown&gt;
+#14 0x5acaf7f1ac78 &lt;unknown&gt;
+#15 0x5acaf7f1ae15 &lt;unknown&gt;
+#16 0x5acaf7f2cd4e &lt;unknown&gt;
+#17 0x79860649caa4 &lt;unknown&gt;
+#18 0x798606529c6c &lt;unknown&gt;
 </status>
 </kw>
 <arg>${user}</arg>
-<status status="FAIL" start="2026-04-28T08:05:36.614829" elapsed="0.436620">WebDriverException: Message: unknown error: ChromeDriver only supports characters in the BMP
+<status status="FAIL" start="2026-04-28T08:13:06.651313" elapsed="0.310091">WebDriverException: Message: unknown error: ChromeDriver only supports characters in the BMP
   (Session info: chrome=148.0.7778.56)
 Stacktrace:
-#0 0x56fc97b7531a &lt;unknown&gt;
-#1 0x56fc9756db39 &lt;unknown&gt;
-#2 0x56fc97603204 &lt;unknown&gt;
-#3 0x56fc975bd6d1 &lt;unknown&gt;
-#4 0x56fc975bb74a &lt;unknown&gt;
-#5 0x56fc975b6f77 &lt;unknown&gt;
-#6 0x56fc9760a1dc &lt;unknown&gt;
-#7 0x56fc975b573f &lt;unknown&gt;
-#8 0x56fc975b6501 &lt;unknown&gt;
-#9 0x56fc97b387bb &lt;unknown&gt;
-#10 0x56fc97b3b6bd &lt;unknown&gt;
-#11 0x56fc97b25608 &lt;unknown&gt;
-#12 0x56fc97b3c250 &lt;unknown&gt;
-#13 0x56fc97b0c030 &lt;unknown&gt;
-#14 0x56fc97b61c78 &lt;unknown&gt;
-#15 0x56fc97b61e15 &lt;unknown&gt;
-#16 0x56fc97b73d4e &lt;unknown&gt;
-#17 0x7f178809caa4 &lt;unknown&gt;
-#18 0x7f1788129c6c &lt;unknown&gt;
+#0 0x5acaf7f2e31a &lt;unknown&gt;
+#1 0x5acaf7926b39 &lt;unknown&gt;
+#2 0x5acaf79bc204 &lt;unknown&gt;
+#3 0x5acaf79766d1 &lt;unknown&gt;
+#4 0x5acaf797474a &lt;unknown&gt;
+#5 0x5acaf796ff77 &lt;unknown&gt;
+#6 0x5acaf79c31dc &lt;unknown&gt;
+#7 0x5acaf796e73f &lt;unknown&gt;
+#8 0x5acaf796f501 &lt;unknown&gt;
+#9 0x5acaf7ef17bb &lt;unknown&gt;
+#10 0x5acaf7ef46bd &lt;unknown&gt;
+#11 0x5acaf7ede608 &lt;unknown&gt;
+#12 0x5acaf7ef5250 &lt;unknown&gt;
+#13 0x5acaf7ec5030 &lt;unknown&gt;
+#14 0x5acaf7f1ac78 &lt;unknown&gt;
+#15 0x5acaf7f1ae15 &lt;unknown&gt;
+#16 0x5acaf7f2cd4e &lt;unknown&gt;
+#17 0x79860649caa4 &lt;unknown&gt;
+#18 0x798606529c6c &lt;unknown&gt;
 </status>
 </kw>
 <kw name="Input User Password" owner="login_resources">
 <arg>${pass}</arg>
-<status status="NOT RUN" start="2026-04-28T08:05:37.051805" elapsed="0.000070"/>
+<status status="NOT RUN" start="2026-04-28T08:13:06.961877" elapsed="0.000092"/>
 </kw>
 <arg>user😀🎉</arg>
 <arg>senha123</arg>
-<status status="FAIL" start="2026-04-28T08:05:36.614239" elapsed="0.437829">WebDriverException: Message: unknown error: ChromeDriver only supports characters in the BMP
+<status status="FAIL" start="2026-04-28T08:13:06.650716" elapsed="0.311456">WebDriverException: Message: unknown error: ChromeDriver only supports characters in the BMP
   (Session info: chrome=148.0.7778.56)
 Stacktrace:
-#0 0x56fc97b7531a &lt;unknown&gt;
-#1 0x56fc9756db39 &lt;unknown&gt;
-#2 0x56fc97603204 &lt;unknown&gt;
-#3 0x56fc975bd6d1 &lt;unknown&gt;
-#4 0x56fc975bb74a &lt;unknown&gt;
-#5 0x56fc975b6f77 &lt;unknown&gt;
-#6 0x56fc9760a1dc &lt;unknown&gt;
-#7 0x56fc975b573f &lt;unknown&gt;
-#8 0x56fc975b6501 &lt;unknown&gt;
-#9 0x56fc97b387bb &lt;unknown&gt;
-#10 0x56fc97b3b6bd &lt;unknown&gt;
-#11 0x56fc97b25608 &lt;unknown&gt;
-#12 0x56fc97b3c250 &lt;unknown&gt;
-#13 0x56fc97b0c030 &lt;unknown&gt;
-#14 0x56fc97b61c78 &lt;unknown&gt;
-#15 0x56fc97b61e15 &lt;unknown&gt;
-#16 0x56fc97b73d4e &lt;unknown&gt;
-#17 0x7f178809caa4 &lt;unknown&gt;
-#18 0x7f1788129c6c &lt;unknown&gt;
+#0 0x5acaf7f2e31a &lt;unknown&gt;
+#1 0x5acaf7926b39 &lt;unknown&gt;
+#2 0x5acaf79bc204 &lt;unknown&gt;
+#3 0x5acaf79766d1 &lt;unknown&gt;
+#4 0x5acaf797474a &lt;unknown&gt;
+#5 0x5acaf796ff77 &lt;unknown&gt;
+#6 0x5acaf79c31dc &lt;unknown&gt;
+#7 0x5acaf796e73f &lt;unknown&gt;
+#8 0x5acaf796f501 &lt;unknown&gt;
+#9 0x5acaf7ef17bb &lt;unknown&gt;
+#10 0x5acaf7ef46bd &lt;unknown&gt;
+#11 0x5acaf7ede608 &lt;unknown&gt;
+#12 0x5acaf7ef5250 &lt;unknown&gt;
+#13 0x5acaf7ec5030 &lt;unknown&gt;
+#14 0x5acaf7f1ac78 &lt;unknown&gt;
+#15 0x5acaf7f1ae15 &lt;unknown&gt;
+#16 0x5acaf7f2cd4e &lt;unknown&gt;
+#17 0x79860649caa4 &lt;unknown&gt;
+#18 0x798606529c6c &lt;unknown&gt;
 </status>
 </kw>
 <kw name="And I click the login button">
-<status status="NOT RUN" start="2026-04-28T08:05:37.052540" elapsed="0.000062"/>
+<status status="NOT RUN" start="2026-04-28T08:13:06.962650" elapsed="0.000062"/>
 </kw>
 <kw name="Then I should see an error message or invalid login">
-<status status="NOT RUN" start="2026-04-28T08:05:37.052961" elapsed="0.000055"/>
+<status status="NOT RUN" start="2026-04-28T08:13:06.963072" elapsed="0.000055"/>
 </kw>
 <kw name="Close Session" owner="login_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-28T08:05:37.054004" elapsed="0.146374"/>
+<status status="PASS" start="2026-04-28T08:13:06.964039" elapsed="0.151029"/>
 </kw>
 <doc>Closes the browser</doc>
-<status status="PASS" start="2026-04-28T08:05:37.053469" elapsed="0.147136"/>
+<status status="PASS" start="2026-04-28T08:13:06.963574" elapsed="0.151685"/>
 </kw>
 <doc>Test login with emoji characters</doc>
-<status status="FAIL" start="2026-04-28T08:05:34.618348" elapsed="2.582430">WebDriverException: Message: unknown error: ChromeDriver only supports characters in the BMP
+<status status="FAIL" start="2026-04-28T08:13:04.507316" elapsed="2.608152">WebDriverException: Message: unknown error: ChromeDriver only supports characters in the BMP
   (Session info: chrome=148.0.7778.56)
 Stacktrace:
-#0 0x56fc97b7531a &lt;unknown&gt;
-#1 0x56fc9756db39 &lt;unknown&gt;
-#2 0x56fc97603204 &lt;unknown&gt;
-#3 0x56fc975bd6d1 &lt;unknown&gt;
-#4 0x56fc975bb74a &lt;unknown&gt;
-#5 0x56fc975b6f77 &lt;unknown&gt;
-#6 0x56fc9760a1dc &lt;unknown&gt;
-#7 0x56fc975b573f &lt;unknown&gt;
-#8 0x56fc975b6501 &lt;unknown&gt;
-#9 0x56fc97b387bb &lt;unknown&gt;
-#10 0x56fc97b3b6bd &lt;unknown&gt;
-#11 0x56fc97b25608 &lt;unknown&gt;
-#12 0x56fc97b3c250 &lt;unknown&gt;
-#13 0x56fc97b0c030 &lt;unknown&gt;
-#14 0x56fc97b61c78 &lt;unknown&gt;
-#15 0x56fc97b61e15 &lt;unknown&gt;
-#16 0x56fc97b73d4e &lt;unknown&gt;
-#17 0x7f178809caa4 &lt;unknown&gt;
-#18 0x7f1788129c6c &lt;unknown&gt;
+#0 0x5acaf7f2e31a &lt;unknown&gt;
+#1 0x5acaf7926b39 &lt;unknown&gt;
+#2 0x5acaf79bc204 &lt;unknown&gt;
+#3 0x5acaf79766d1 &lt;unknown&gt;
+#4 0x5acaf797474a &lt;unknown&gt;
+#5 0x5acaf796ff77 &lt;unknown&gt;
+#6 0x5acaf79c31dc &lt;unknown&gt;
+#7 0x5acaf796e73f &lt;unknown&gt;
+#8 0x5acaf796f501 &lt;unknown&gt;
+#9 0x5acaf7ef17bb &lt;unknown&gt;
+#10 0x5acaf7ef46bd &lt;unknown&gt;
+#11 0x5acaf7ede608 &lt;unknown&gt;
+#12 0x5acaf7ef5250 &lt;unknown&gt;
+#13 0x5acaf7ec5030 &lt;unknown&gt;
+#14 0x5acaf7f1ac78 &lt;unknown&gt;
+#15 0x5acaf7f1ae15 &lt;unknown&gt;
+#16 0x5acaf7f2cd4e &lt;unknown&gt;
+#17 0x79860649caa4 &lt;unknown&gt;
+#18 0x798606529c6c &lt;unknown&gt;
 </status>
 </test>
 <test id="s1-t4" name="Scenario: Login with special characters" line="35">
 <kw name="Given I am on the Mobak login page">
 <kw name="Open Mobak Login Page" owner="login_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:37.209215" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<msg time="2026-04-28T08:13:07.124586" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-28T08:05:37.208670" elapsed="1.830283"/>
+<status status="PASS" start="2026-04-28T08:13:07.124034" elapsed="1.873821"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-28T08:05:39.039261" elapsed="0.052979"/>
+<status status="PASS" start="2026-04-28T08:13:08.998164" elapsed="0.076221"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USER_FIELD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-28T08:05:39.092584" elapsed="0.067449"/>
+<status status="PASS" start="2026-04-28T08:13:09.074834" elapsed="0.054005"/>
 </kw>
 <doc>Opens the browser and navigates to login page</doc>
-<status status="PASS" start="2026-04-28T08:05:37.202704" elapsed="1.957525"/>
+<status status="PASS" start="2026-04-28T08:13:07.117538" elapsed="2.011566"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:37.202156" elapsed="1.958195"/>
+<status status="PASS" start="2026-04-28T08:13:07.117013" elapsed="2.012255"/>
 </kw>
 <kw name="When I fill credentials">
 <kw name="Input Username" owner="login_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:39.163008" level="INFO">Typing text 'user@#$%^&amp;*()' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
+<msg time="2026-04-28T08:13:09.131972" level="INFO">Typing text 'user@#$%^&amp;*()' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
 <arg>${USER_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:39.162555" elapsed="0.290358"/>
+<status status="PASS" start="2026-04-28T08:13:09.131434" elapsed="0.330763"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-28T08:05:39.161795" elapsed="0.291313"/>
+<status status="PASS" start="2026-04-28T08:13:09.130750" elapsed="0.331653"/>
 </kw>
 <kw name="Input User Password" owner="login_resources">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:39.454832" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
-<msg time="2026-04-28T08:05:39.525782" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-28T08:13:09.463923" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
+<msg time="2026-04-28T08:13:09.528751" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASS_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:39.454330" elapsed="0.171711"/>
+<status status="PASS" start="2026-04-28T08:13:09.463450" elapsed="0.167877"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-28T08:05:39.453655" elapsed="0.172573"/>
+<status status="PASS" start="2026-04-28T08:13:09.462844" elapsed="0.168701"/>
 </kw>
 <arg>user@#$%^&amp;*()</arg>
 <arg>senha!@#$%</arg>
-<status status="PASS" start="2026-04-28T08:05:39.161004" elapsed="0.465343"/>
+<status status="PASS" start="2026-04-28T08:13:09.129922" elapsed="0.501741"/>
 </kw>
 <kw name="And I click the login button">
 <kw name="Submit Login" owner="login_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:39.628216" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
+<msg time="2026-04-28T08:13:09.633477" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:39.627863" elapsed="0.175694"/>
+<status status="PASS" start="2026-04-28T08:13:09.632980" elapsed="0.168004"/>
 </kw>
 <doc>Clicks the login button</doc>
-<status status="PASS" start="2026-04-28T08:05:39.627464" elapsed="0.176332"/>
+<status status="PASS" start="2026-04-28T08:13:09.632609" elapsed="0.168576"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:39.626897" elapsed="0.177025"/>
+<status status="PASS" start="2026-04-28T08:13:09.632109" elapsed="0.169192"/>
 </kw>
 <kw name="Then I should see an error message or invalid login">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:45.106142" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-125.png"&gt;&lt;img src="selenium-screenshot-125.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:45.106475" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:13:15.118219" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-153.png"&gt;&lt;img src="selenium-screenshot-153.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:15.118477" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:05:39.806060" elapsed="5.301405">Element 'css=.error-message' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:13:09.803025" elapsed="5.316181">Element 'css=.error-message' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:05:45.107834" level="INFO">${check1} = False</msg>
+<msg time="2026-04-28T08:13:15.119528" level="INFO">${check1} = False</msg>
 <var>${check1}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:39.805363" elapsed="5.302556"/>
+<status status="PASS" start="2026-04-28T08:13:09.802427" elapsed="5.317162"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:50.403168" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-126.png"&gt;&lt;img src="selenium-screenshot-126.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:50.403400" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:13:20.422440" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-154.png"&gt;&lt;img src="selenium-screenshot-154.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:20.422705" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:05:45.109073" elapsed="5.295208">Element 'css=[class*='error']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:13:15.120471" elapsed="5.303163">Element 'css=[class*='error']' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:05:50.404593" level="INFO">${check2} = False</msg>
+<msg time="2026-04-28T08:13:20.424011" level="INFO">${check2} = False</msg>
 <var>${check2}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:45.108300" elapsed="5.296350"/>
+<status status="PASS" start="2026-04-28T08:13:15.119849" elapsed="5.304226"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:50.631891" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-127.png"&gt;&lt;img src="selenium-screenshot-127.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:50.632122" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
+<msg time="2026-04-28T08:13:20.680960" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-155.png"&gt;&lt;img src="selenium-screenshot-155.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:20.681214" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
 <arg>Invalid</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-28T08:05:50.405725" elapsed="0.227006">Page should have contained text 'Invalid' but did not.</status>
+<status status="FAIL" start="2026-04-28T08:13:20.425132" elapsed="0.256711">Page should have contained text 'Invalid' but did not.</status>
 </kw>
-<msg time="2026-04-28T08:05:50.632994" level="INFO">${check3} = False</msg>
+<msg time="2026-04-28T08:13:20.682121" level="INFO">${check3} = False</msg>
 <var>${check3}</var>
 <arg>Page Should Contain</arg>
 <arg>Invalid</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:50.404985" elapsed="0.228067"/>
+<status status="PASS" start="2026-04-28T08:13:20.424360" elapsed="0.257822"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:50.658302" level="INFO">Current page contains text 'erro'.</msg>
+<msg time="2026-04-28T08:13:20.707031" level="INFO">Current page contains text 'erro'.</msg>
 <arg>erro</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-04-28T08:05:50.633933" elapsed="0.024603"/>
+<status status="PASS" start="2026-04-28T08:13:20.683328" elapsed="0.023941"/>
 </kw>
-<msg time="2026-04-28T08:05:50.658830" level="INFO">${check4} = True</msg>
+<msg time="2026-04-28T08:13:20.707641" level="INFO">${check4} = True</msg>
 <var>${check4}</var>
 <arg>Page Should Contain</arg>
 <arg>erro</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:50.633312" elapsed="0.025602"/>
+<status status="PASS" start="2026-04-28T08:13:20.682508" elapsed="0.025216"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${check1} == True or ${check2} == True or ${check3} == True or ${check4} == True</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-04-28T08:05:50.659247" elapsed="0.001044"/>
+<status status="PASS" start="2026-04-28T08:13:20.708045" elapsed="0.001032"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:39.804715" elapsed="10.855789"/>
+<status status="PASS" start="2026-04-28T08:13:09.801884" elapsed="10.907404"/>
 </kw>
 <kw name="Close Session" owner="login_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-28T08:05:50.661546" elapsed="0.154212"/>
+<status status="PASS" start="2026-04-28T08:13:20.710360" elapsed="0.150924"/>
 </kw>
 <doc>Closes the browser</doc>
-<status status="PASS" start="2026-04-28T08:05:50.661004" elapsed="0.154947"/>
+<status status="PASS" start="2026-04-28T08:13:20.709864" elapsed="0.151652"/>
 </kw>
 <doc>Test login with special symbols</doc>
-<status status="PASS" start="2026-04-28T08:05:37.201312" elapsed="13.614808"/>
+<status status="PASS" start="2026-04-28T08:13:07.116003" elapsed="13.745707"/>
 </test>
 <test id="s1-t5" name="Scenario: Login with SQL injection attempt" line="42">
 <kw name="Given I am on the Mobak login page">
 <kw name="Open Mobak Login Page" owner="login_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:50.819283" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<msg time="2026-04-28T08:13:20.864444" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-28T08:05:50.818882" elapsed="1.830396"/>
+<status status="PASS" start="2026-04-28T08:13:20.864032" elapsed="2.048371"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-28T08:05:52.649608" elapsed="0.063717"/>
+<status status="PASS" start="2026-04-28T08:13:22.912734" elapsed="0.051654"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USER_FIELD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-28T08:05:52.713776" elapsed="0.109500"/>
+<status status="PASS" start="2026-04-28T08:13:22.964820" elapsed="0.093516"/>
 </kw>
 <doc>Opens the browser and navigates to login page</doc>
-<status status="PASS" start="2026-04-28T08:05:50.818365" elapsed="2.005160"/>
+<status status="PASS" start="2026-04-28T08:13:20.863599" elapsed="2.194968"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:50.817853" elapsed="2.005876"/>
+<status status="PASS" start="2026-04-28T08:13:20.863071" elapsed="2.195615"/>
 </kw>
 <kw name="When I fill credentials">
 <kw name="Input Username" owner="login_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:52.826385" level="INFO">Typing text 'admin' OR '1'='1' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
+<msg time="2026-04-28T08:13:23.060733" level="INFO">Typing text 'admin' OR '1'='1' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
 <arg>${USER_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:52.825856" elapsed="0.293418"/>
+<status status="PASS" start="2026-04-28T08:13:23.060312" elapsed="0.319165"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-28T08:05:52.825238" elapsed="0.294260"/>
+<status status="PASS" start="2026-04-28T08:13:23.059801" elapsed="0.319899"/>
 </kw>
 <kw name="Input User Password" owner="login_resources">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:53.120873" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
-<msg time="2026-04-28T08:05:53.185153" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-28T08:13:23.381072" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
+<msg time="2026-04-28T08:13:23.448613" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASS_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:53.120339" elapsed="0.161127"/>
+<status status="PASS" start="2026-04-28T08:13:23.380548" elapsed="0.164304"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-28T08:05:53.119804" elapsed="0.161851"/>
+<status status="PASS" start="2026-04-28T08:13:23.379998" elapsed="0.165050"/>
 </kw>
 <arg>admin' OR '1'='1</arg>
 <arg>password</arg>
-<status status="PASS" start="2026-04-28T08:05:52.824346" elapsed="0.457428"/>
+<status status="PASS" start="2026-04-28T08:13:23.059124" elapsed="0.486046"/>
 </kw>
 <kw name="And I click the login button">
 <kw name="Submit Login" owner="login_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:53.283744" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
+<msg time="2026-04-28T08:13:23.547023" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:05:53.283362" elapsed="0.165032"/>
+<status status="PASS" start="2026-04-28T08:13:23.546671" elapsed="0.170919"/>
 </kw>
 <doc>Clicks the login button</doc>
-<status status="PASS" start="2026-04-28T08:05:53.282961" elapsed="0.165703"/>
+<status status="PASS" start="2026-04-28T08:13:23.546275" elapsed="0.171523"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:53.282249" elapsed="0.166545"/>
+<status status="PASS" start="2026-04-28T08:13:23.545732" elapsed="0.172189"/>
 </kw>
 <kw name="Then I should see an error message or invalid login">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:05:58.742451" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-128.png"&gt;&lt;img src="selenium-screenshot-128.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:05:58.742716" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:13:29.025957" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-156.png"&gt;&lt;img src="selenium-screenshot-156.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:29.026291" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:05:53.455040" elapsed="5.288397">Element 'css=.error-message' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:13:23.723938" elapsed="5.303657">Element 'css=.error-message' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:05:58.743707" level="INFO">${check1} = False</msg>
+<msg time="2026-04-28T08:13:29.027892" level="INFO">${check1} = False</msg>
 <var>${check1}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:53.450157" elapsed="5.293613"/>
+<status status="PASS" start="2026-04-28T08:13:23.719056" elapsed="5.308895"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:04.008849" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-129.png"&gt;&lt;img src="selenium-screenshot-129.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:04.009100" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:13:34.325873" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-157.png"&gt;&lt;img src="selenium-screenshot-157.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:34.326175" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:05:58.744749" elapsed="5.265092">Element 'css=[class*='error']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:13:29.028946" elapsed="5.298178">Element 'css=[class*='error']' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:06:04.010104" level="INFO">${check2} = False</msg>
+<msg time="2026-04-28T08:13:34.327468" level="INFO">${check2} = False</msg>
 <var>${check2}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:05:58.744072" elapsed="5.266089"/>
+<status status="PASS" start="2026-04-28T08:13:29.028239" elapsed="5.299289"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:04.236363" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-130.png"&gt;&lt;img src="selenium-screenshot-130.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:04.236623" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
+<msg time="2026-04-28T08:13:34.566901" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-158.png"&gt;&lt;img src="selenium-screenshot-158.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:34.567150" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
 <arg>Invalid</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-28T08:06:04.011049" elapsed="0.226119">Page should have contained text 'Invalid' but did not.</status>
+<status status="FAIL" start="2026-04-28T08:13:34.328470" elapsed="0.239447">Page should have contained text 'Invalid' but did not.</status>
 </kw>
-<msg time="2026-04-28T08:06:04.237447" level="INFO">${check3} = False</msg>
+<msg time="2026-04-28T08:13:34.568270" level="INFO">${check3} = False</msg>
 <var>${check3}</var>
 <arg>Page Should Contain</arg>
 <arg>Invalid</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:04.010440" elapsed="0.227068"/>
+<status status="PASS" start="2026-04-28T08:13:34.327800" elapsed="0.240551"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:04.262934" level="INFO">Current page contains text 'erro'.</msg>
+<msg time="2026-04-28T08:13:34.593736" level="INFO">Current page contains text 'erro'.</msg>
 <arg>erro</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-04-28T08:06:04.238549" elapsed="0.024546"/>
+<status status="PASS" start="2026-04-28T08:13:34.569592" elapsed="0.024303"/>
 </kw>
-<msg time="2026-04-28T08:06:04.263328" level="INFO">${check4} = True</msg>
+<msg time="2026-04-28T08:13:34.594128" level="INFO">${check4} = True</msg>
 <var>${check4}</var>
 <arg>Page Should Contain</arg>
 <arg>erro</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:04.237781" elapsed="0.025602"/>
+<status status="PASS" start="2026-04-28T08:13:34.568738" elapsed="0.025449"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${check1} == True or ${check2} == True or ${check3} == True or ${check4} == True</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-04-28T08:06:04.263646" elapsed="0.000911"/>
+<status status="PASS" start="2026-04-28T08:13:34.594448" elapsed="0.000904"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:05:53.449428" elapsed="10.815275"/>
+<status status="PASS" start="2026-04-28T08:13:23.718484" elapsed="10.877040"/>
 </kw>
 <kw name="Close Session" owner="login_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-28T08:06:04.265606" elapsed="0.149023"/>
+<status status="PASS" start="2026-04-28T08:13:34.596648" elapsed="0.152420"/>
 </kw>
 <doc>Closes the browser</doc>
-<status status="PASS" start="2026-04-28T08:06:04.265150" elapsed="0.149667"/>
+<status status="PASS" start="2026-04-28T08:13:34.596102" elapsed="0.153151"/>
 </kw>
 <doc>Test SQL injection in username field</doc>
-<status status="PASS" start="2026-04-28T08:05:50.816878" elapsed="13.598110"/>
+<status status="PASS" start="2026-04-28T08:13:20.862188" elapsed="13.887269"/>
 </test>
 <test id="s1-t6" name="Scenario: Login with very long username" line="49">
 <kw name="Given I am on the Mobak login page">
 <kw name="Open Mobak Login Page" owner="login_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:04.417553" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<msg time="2026-04-28T08:13:34.752178" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-28T08:06:04.417151" elapsed="1.831634"/>
+<status status="PASS" start="2026-04-28T08:13:34.751790" elapsed="1.942245"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-28T08:06:06.249217" elapsed="0.071445"/>
+<status status="PASS" start="2026-04-28T08:13:36.694487" elapsed="0.060534"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USER_FIELD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-28T08:06:06.321039" elapsed="0.060081"/>
+<status status="PASS" start="2026-04-28T08:13:36.755353" elapsed="0.163942"/>
 </kw>
 <doc>Opens the browser and navigates to login page</doc>
-<status status="PASS" start="2026-04-28T08:06:04.416745" elapsed="1.964651"/>
+<status status="PASS" start="2026-04-28T08:13:34.751364" elapsed="2.168146"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:04.416211" elapsed="1.965416"/>
+<status status="PASS" start="2026-04-28T08:13:34.750808" elapsed="2.168821"/>
 </kw>
 <kw name="When I fill credentials">
 <kw name="Input Username" owner="login_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:06.384401" level="INFO">Typing text 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
+<msg time="2026-04-28T08:13:36.921768" level="INFO">Typing text 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
 <arg>${USER_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:06.383852" elapsed="1.316112"/>
+<status status="PASS" start="2026-04-28T08:13:36.921349" elapsed="1.249036"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-28T08:06:06.383167" elapsed="1.317141"/>
+<status status="PASS" start="2026-04-28T08:13:36.920719" elapsed="1.250047"/>
 </kw>
 <kw name="Input User Password" owner="login_resources">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:07.701661" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
-<msg time="2026-04-28T08:06:07.772266" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-28T08:13:38.172046" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
+<msg time="2026-04-28T08:13:38.242086" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASS_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:07.701214" elapsed="0.168812"/>
+<status status="PASS" start="2026-04-28T08:13:38.171653" elapsed="0.170150"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-28T08:06:07.700649" elapsed="0.169570"/>
+<status status="PASS" start="2026-04-28T08:13:38.171094" elapsed="0.170898"/>
 </kw>
 <arg>${LONG_STRING}</arg>
 <arg>senha123</arg>
-<status status="PASS" start="2026-04-28T08:06:06.382257" elapsed="1.488080"/>
+<status status="PASS" start="2026-04-28T08:13:36.920059" elapsed="1.422054"/>
 </kw>
 <kw name="And I click the login button">
 <kw name="Submit Login" owner="login_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:07.872255" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
+<msg time="2026-04-28T08:13:38.343832" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:07.871825" elapsed="0.171770"/>
+<status status="PASS" start="2026-04-28T08:13:38.343465" elapsed="0.167559"/>
 </kw>
 <doc>Clicks the login button</doc>
-<status status="PASS" start="2026-04-28T08:06:07.871402" elapsed="0.172425"/>
+<status status="PASS" start="2026-04-28T08:13:38.343067" elapsed="0.168151"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:07.870804" elapsed="0.173190"/>
+<status status="PASS" start="2026-04-28T08:13:38.342576" elapsed="0.168759"/>
 </kw>
 <kw name="Then I should see an error message or invalid login">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:13.377359" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-131.png"&gt;&lt;img src="selenium-screenshot-131.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:13.377667" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:13:43.862714" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-159.png"&gt;&lt;img src="selenium-screenshot-159.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:43.862979" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:06:08.046283" elapsed="5.332253">Element 'css=.error-message' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:13:38.512970" elapsed="5.350865">Element 'css=.error-message' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:06:13.378855" level="INFO">${check1} = False</msg>
+<msg time="2026-04-28T08:13:43.864168" level="INFO">${check1} = False</msg>
 <var>${check1}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:08.045454" elapsed="5.333456"/>
+<status status="PASS" start="2026-04-28T08:13:38.512353" elapsed="5.351874"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:18.729980" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-132.png"&gt;&lt;img src="selenium-screenshot-132.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:18.730224" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:13:49.211500" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-160.png"&gt;&lt;img src="selenium-screenshot-160.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:49.211808" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:06:13.379859" elapsed="5.351100">Element 'css=[class*='error']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:13:43.865157" elapsed="5.347614">Element 'css=[class*='error']' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:06:18.731235" level="INFO">${check2} = False</msg>
+<msg time="2026-04-28T08:13:49.213148" level="INFO">${check2} = False</msg>
 <var>${check2}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:13.379194" elapsed="5.352101"/>
+<status status="PASS" start="2026-04-28T08:13:43.864535" elapsed="5.348671"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:19.002453" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-133.png"&gt;&lt;img src="selenium-screenshot-133.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:19.002730" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
+<msg time="2026-04-28T08:13:49.490769" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-161.png"&gt;&lt;img src="selenium-screenshot-161.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:49.491083" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
 <arg>Invalid</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-28T08:06:18.732210" elapsed="0.271080">Page should have contained text 'Invalid' but did not.</status>
+<status status="FAIL" start="2026-04-28T08:13:49.214134" elapsed="0.277656">Page should have contained text 'Invalid' but did not.</status>
 </kw>
-<msg time="2026-04-28T08:06:19.003619" level="INFO">${check3} = False</msg>
+<msg time="2026-04-28T08:13:49.492132" level="INFO">${check3} = False</msg>
 <var>${check3}</var>
 <arg>Page Should Contain</arg>
 <arg>Invalid</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:18.731612" elapsed="0.272074"/>
+<status status="PASS" start="2026-04-28T08:13:49.213518" elapsed="0.278690"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:19.030361" level="INFO">Current page contains text 'erro'.</msg>
+<msg time="2026-04-28T08:13:49.517771" level="INFO">Current page contains text 'erro'.</msg>
 <arg>erro</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-04-28T08:06:19.004600" elapsed="0.025937"/>
+<status status="PASS" start="2026-04-28T08:13:49.493160" elapsed="0.024765"/>
 </kw>
-<msg time="2026-04-28T08:06:19.030775" level="INFO">${check4} = True</msg>
+<msg time="2026-04-28T08:13:49.518158" level="INFO">${check4} = True</msg>
 <var>${check4}</var>
 <arg>Page Should Contain</arg>
 <arg>erro</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:19.003965" elapsed="0.026864"/>
+<status status="PASS" start="2026-04-28T08:13:49.492509" elapsed="0.025702"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${check1} == True or ${check2} == True or ${check3} == True or ${check4} == True</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-04-28T08:06:19.031071" elapsed="0.000922"/>
+<status status="PASS" start="2026-04-28T08:13:49.518487" elapsed="0.000949"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:08.044652" elapsed="10.987486"/>
+<status status="PASS" start="2026-04-28T08:13:38.511839" elapsed="11.007749"/>
 </kw>
 <kw name="Close Session" owner="login_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-28T08:06:19.033065" elapsed="0.147255"/>
+<status status="PASS" start="2026-04-28T08:13:49.520508" elapsed="0.174138"/>
 </kw>
 <doc>Closes the browser</doc>
-<status status="PASS" start="2026-04-28T08:06:19.032608" elapsed="0.147937"/>
+<status status="PASS" start="2026-04-28T08:13:49.520034" elapsed="0.174801"/>
 </kw>
 <doc>Test username with 500+ characters</doc>
-<status status="PASS" start="2026-04-28T08:06:04.415450" elapsed="14.765265"/>
+<status status="PASS" start="2026-04-28T08:13:34.749945" elapsed="14.945075"/>
 </test>
 <test id="s1-t7" name="Scenario: Login with spaces only" line="56">
 <kw name="Given I am on the Mobak login page">
 <kw name="Open Mobak Login Page" owner="login_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:19.183239" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<msg time="2026-04-28T08:13:49.697934" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-28T08:06:19.182863" elapsed="1.859463"/>
+<status status="PASS" start="2026-04-28T08:13:49.697530" elapsed="1.881117"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-28T08:06:21.042675" elapsed="0.059544"/>
+<status status="PASS" start="2026-04-28T08:13:51.578985" elapsed="0.068973"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USER_FIELD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-28T08:06:21.102609" elapsed="0.129152"/>
+<status status="PASS" start="2026-04-28T08:13:51.648363" elapsed="0.046684"/>
 </kw>
 <doc>Opens the browser and navigates to login page</doc>
-<status status="PASS" start="2026-04-28T08:06:19.182424" elapsed="2.049601"/>
+<status status="PASS" start="2026-04-28T08:13:49.697070" elapsed="1.998206"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:19.181933" elapsed="2.050262"/>
+<status status="PASS" start="2026-04-28T08:13:49.696497" elapsed="1.998901"/>
 </kw>
 <kw name="When I fill credentials">
 <kw name="Input Username" owner="login_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:21.234452" level="INFO">Typing text '   ' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
+<msg time="2026-04-28T08:13:51.697632" level="INFO">Typing text '   ' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
 <arg>${USER_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:21.234047" elapsed="0.181089"/>
+<status status="PASS" start="2026-04-28T08:13:51.697138" elapsed="0.275859"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-28T08:06:21.233581" elapsed="0.181919"/>
+<status status="PASS" start="2026-04-28T08:13:51.696680" elapsed="0.276628"/>
 </kw>
 <kw name="Input User Password" owner="login_resources">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:21.417030" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
-<msg time="2026-04-28T08:06:21.483541" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-28T08:13:51.974644" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
+<msg time="2026-04-28T08:13:52.042850" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASS_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:21.416617" elapsed="0.157372"/>
+<status status="PASS" start="2026-04-28T08:13:51.974203" elapsed="0.159433"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-28T08:06:21.415867" elapsed="0.158314"/>
+<status status="PASS" start="2026-04-28T08:13:51.973642" elapsed="0.160199"/>
 </kw>
 <arg>${SPACE}${SPACE}${SPACE}</arg>
 <arg>${SPACE}${SPACE}${SPACE}</arg>
-<status status="PASS" start="2026-04-28T08:06:21.232715" elapsed="0.341588"/>
+<status status="PASS" start="2026-04-28T08:13:51.695860" elapsed="0.438103"/>
 </kw>
 <kw name="And I click the login button">
 <kw name="Submit Login" owner="login_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:21.576305" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
+<msg time="2026-04-28T08:13:52.135736" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:21.575912" elapsed="0.167277"/>
+<status status="PASS" start="2026-04-28T08:13:52.135343" elapsed="0.167784"/>
 </kw>
 <doc>Clicks the login button</doc>
-<status status="PASS" start="2026-04-28T08:06:21.575525" elapsed="0.167859"/>
+<status status="PASS" start="2026-04-28T08:13:52.134936" elapsed="0.168390"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:21.574861" elapsed="0.168685"/>
+<status status="PASS" start="2026-04-28T08:13:52.134425" elapsed="0.169044"/>
 </kw>
 <kw name="Then I should see an error message">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:27.027821" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-134.png"&gt;&lt;img src="selenium-screenshot-134.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:27.028065" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:13:57.590236" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-162.png"&gt;&lt;img src="selenium-screenshot-162.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:13:57.590497" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
 <arg>css=.error-message</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:06:21.745114" elapsed="5.283677">Element 'css=.error-message' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:13:52.305052" elapsed="5.286194">Element 'css=.error-message' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:06:27.029039" level="INFO">${check1} = False</msg>
+<msg time="2026-04-28T08:13:57.591630" level="INFO">${check1} = False</msg>
 <var>${check1}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=.error-message</arg>
 <arg>timeout=5s</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:21.744500" elapsed="5.284593"/>
+<status status="PASS" start="2026-04-28T08:13:52.304442" elapsed="5.287248"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:32.340313" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-135.png"&gt;&lt;img src="selenium-screenshot-135.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:32.340622" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:14:02.892095" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-163.png"&gt;&lt;img src="selenium-screenshot-163.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:02.892438" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:06:27.029976" elapsed="5.311651">Element 'css=[class*='error']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:13:57.592646" elapsed="5.300747">Element 'css=[class*='error']' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:06:32.342025" level="INFO">${check2} = False</msg>
+<msg time="2026-04-28T08:14:02.893725" level="INFO">${check2} = False</msg>
 <var>${check2}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=5s</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:27.029354" elapsed="5.312748"/>
+<status status="PASS" start="2026-04-28T08:13:57.591970" elapsed="5.301812"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:32.582238" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-136.png"&gt;&lt;img src="selenium-screenshot-136.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:32.582497" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
+<msg time="2026-04-28T08:14:03.138186" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-164.png"&gt;&lt;img src="selenium-screenshot-164.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:03.138511" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
 <arg>Invalid</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-28T08:06:32.343189" elapsed="0.239834">Page should have contained text 'Invalid' but did not.</status>
+<status status="FAIL" start="2026-04-28T08:14:02.894785" elapsed="0.244386">Page should have contained text 'Invalid' but did not.</status>
 </kw>
-<msg time="2026-04-28T08:06:32.583271" level="INFO">${check3} = False</msg>
+<msg time="2026-04-28T08:14:03.139506" level="INFO">${check3} = False</msg>
 <var>${check3}</var>
 <arg>Page Should Contain</arg>
 <arg>Invalid</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:32.342490" elapsed="0.240835"/>
+<status status="PASS" start="2026-04-28T08:14:02.894088" elapsed="0.245479"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
-<msg time="2026-04-28T08:06:32.584537" level="FAIL">'False == True or False == True or False == True' should be true.</msg>
+<msg time="2026-04-28T08:14:03.141188" level="FAIL">'False == True or False == True or False == True' should be true.</msg>
 <arg>${check1} == True or ${check2} == True or ${check3} == True</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="FAIL" start="2026-04-28T08:06:32.583599" elapsed="0.001073">'False == True or False == True or False == True' should be true.</status>
+<status status="FAIL" start="2026-04-28T08:14:03.139879" elapsed="0.001511">'False == True or False == True or False == True' should be true.</status>
 </kw>
-<status status="FAIL" start="2026-04-28T08:06:21.743999" elapsed="10.840892">'False == True or False == True or False == True' should be true.</status>
+<status status="FAIL" start="2026-04-28T08:13:52.303922" elapsed="10.837814">'False == True or False == True or False == True' should be true.</status>
 </kw>
 <kw name="Close Session" owner="login_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-28T08:06:32.585948" elapsed="0.151049"/>
+<status status="PASS" start="2026-04-28T08:14:03.143207" elapsed="0.147182"/>
 </kw>
 <doc>Closes the browser</doc>
-<status status="PASS" start="2026-04-28T08:06:32.585458" elapsed="0.151738"/>
+<status status="PASS" start="2026-04-28T08:14:03.142544" elapsed="0.148116"/>
 </kw>
 <doc>Test login with only whitespace</doc>
-<status status="FAIL" start="2026-04-28T08:06:19.181155" elapsed="13.556224">'False == True or False == True or False == True' should be true.</status>
+<status status="FAIL" start="2026-04-28T08:13:49.695539" elapsed="13.595332">'False == True or False == True or False == True' should be true.</status>
 </test>
 <test id="s1-t8" name="Scenario: Login with HTML tags" line="63">
 <kw name="Given I am on the Mobak login page">
 <kw name="Open Mobak Login Page" owner="login_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:32.740246" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<msg time="2026-04-28T08:14:03.293977" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-28T08:06:32.739857" elapsed="1.852011"/>
+<status status="PASS" start="2026-04-28T08:14:03.293540" elapsed="1.845693"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-28T08:06:34.592295" elapsed="0.073624"/>
+<status status="PASS" start="2026-04-28T08:14:05.139566" elapsed="0.056341"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USER_FIELD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-28T08:06:34.666207" elapsed="0.061499"/>
+<status status="PASS" start="2026-04-28T08:14:05.196281" elapsed="0.053766"/>
 </kw>
 <doc>Opens the browser and navigates to login page</doc>
-<status status="PASS" start="2026-04-28T08:06:32.739393" elapsed="1.988520"/>
+<status status="PASS" start="2026-04-28T08:14:03.293031" elapsed="1.957234"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:32.738849" elapsed="1.989181"/>
+<status status="PASS" start="2026-04-28T08:14:03.292458" elapsed="1.957928"/>
 </kw>
 <kw name="When I fill credentials">
 <kw name="Input Username" owner="login_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:34.729979" level="INFO">Typing text '&lt;script&gt;alert('xss')&lt;/script&gt;' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
+<msg time="2026-04-28T08:14:05.252667" level="INFO">Typing text '&lt;script&gt;alert('xss')&lt;/script&gt;' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
 <arg>${USER_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:34.729573" elapsed="0.381347"/>
+<status status="PASS" start="2026-04-28T08:14:05.252168" elapsed="0.367441"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-28T08:06:34.729088" elapsed="0.382028"/>
+<status status="PASS" start="2026-04-28T08:14:05.251646" elapsed="0.368164"/>
 </kw>
 <kw name="Input User Password" owner="login_resources">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:35.112425" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
-<msg time="2026-04-28T08:06:35.181162" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-28T08:14:05.621049" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
+<msg time="2026-04-28T08:14:05.690363" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASS_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:35.111972" elapsed="0.162884"/>
+<status status="PASS" start="2026-04-28T08:14:05.620657" elapsed="0.166482"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-28T08:06:35.111438" elapsed="0.163789"/>
+<status status="PASS" start="2026-04-28T08:14:05.620106" elapsed="0.167381"/>
 </kw>
 <arg>&lt;script&gt;alert('xss')&lt;/script&gt;</arg>
 <arg>senha123</arg>
-<status status="PASS" start="2026-04-28T08:06:34.728515" elapsed="0.546873"/>
+<status status="PASS" start="2026-04-28T08:14:05.250931" elapsed="0.536686"/>
 </kw>
 <kw name="And I click the login button">
 <kw name="Submit Login" owner="login_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:35.277290" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
+<msg time="2026-04-28T08:14:05.789458" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:35.276947" elapsed="0.168125"/>
+<status status="PASS" start="2026-04-28T08:14:05.789082" elapsed="0.174016"/>
 </kw>
 <doc>Clicks the login button</doc>
-<status status="PASS" start="2026-04-28T08:06:35.276554" elapsed="0.168724"/>
+<status status="PASS" start="2026-04-28T08:14:05.788710" elapsed="0.174583"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:35.275953" elapsed="0.169444"/>
+<status status="PASS" start="2026-04-28T08:14:05.788160" elapsed="0.175292"/>
 </kw>
 <kw name="Then I should see an error message or invalid login">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:40.723305" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-137.png"&gt;&lt;img src="selenium-screenshot-137.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:40.723600" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:14:11.312339" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-165.png"&gt;&lt;img src="selenium-screenshot-165.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:11.312681" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:06:35.447937" elapsed="5.276400">Element 'css=.error-message' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:14:05.965225" elapsed="5.348389">Element 'css=.error-message' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:06:40.724646" level="INFO">${check1} = False</msg>
+<msg time="2026-04-28T08:14:11.313936" level="INFO">${check1} = False</msg>
 <var>${check1}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:35.446935" elapsed="5.277768"/>
+<status status="PASS" start="2026-04-28T08:14:05.964514" elapsed="5.349477"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:46.025297" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-138.png"&gt;&lt;img src="selenium-screenshot-138.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:46.025621" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:14:16.644975" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-166.png"&gt;&lt;img src="selenium-screenshot-166.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:16.645490" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:06:40.725644" elapsed="5.300700">Element 'css=[class*='error']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:14:11.314914" elapsed="5.331300">Element 'css=[class*='error']' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:06:46.026650" level="INFO">${check2} = False</msg>
+<msg time="2026-04-28T08:14:16.646504" level="INFO">${check2} = False</msg>
 <var>${check2}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:40.724974" elapsed="5.301731"/>
+<status status="PASS" start="2026-04-28T08:14:11.314266" elapsed="5.332295"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:46.238304" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-139.png"&gt;&lt;img src="selenium-screenshot-139.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:46.238632" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
+<msg time="2026-04-28T08:14:16.905894" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-167.png"&gt;&lt;img src="selenium-screenshot-167.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:16.906134" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
 <arg>Invalid</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-28T08:06:46.027598" elapsed="0.211805">Page should have contained text 'Invalid' but did not.</status>
+<status status="FAIL" start="2026-04-28T08:14:16.647479" elapsed="0.259255">Page should have contained text 'Invalid' but did not.</status>
 </kw>
-<msg time="2026-04-28T08:06:46.239823" level="INFO">${check3} = False</msg>
+<msg time="2026-04-28T08:14:16.907096" level="INFO">${check3} = False</msg>
 <var>${check3}</var>
 <arg>Page Should Contain</arg>
 <arg>Invalid</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:46.026973" elapsed="0.212946"/>
+<status status="PASS" start="2026-04-28T08:14:16.646841" elapsed="0.260328"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:46.265134" level="INFO">Current page contains text 'erro'.</msg>
+<msg time="2026-04-28T08:14:16.932396" level="INFO">Current page contains text 'erro'.</msg>
 <arg>erro</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-04-28T08:06:46.241251" elapsed="0.024040"/>
+<status status="PASS" start="2026-04-28T08:14:16.908357" elapsed="0.024267"/>
 </kw>
-<msg time="2026-04-28T08:06:46.265543" level="INFO">${check4} = True</msg>
+<msg time="2026-04-28T08:14:16.932910" level="INFO">${check4} = True</msg>
 <var>${check4}</var>
 <arg>Page Should Contain</arg>
 <arg>erro</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:46.240314" elapsed="0.025282"/>
+<status status="PASS" start="2026-04-28T08:14:16.907537" elapsed="0.025451"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${check1} == True or ${check2} == True or ${check3} == True or ${check4} == True</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-04-28T08:06:46.265835" elapsed="0.000901"/>
+<status status="PASS" start="2026-04-28T08:14:16.933376" elapsed="0.001483"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:35.446094" elapsed="10.820786"/>
+<status status="PASS" start="2026-04-28T08:14:05.963957" elapsed="10.971130"/>
 </kw>
 <kw name="Close Session" owner="login_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-28T08:06:46.267842" elapsed="0.149522"/>
+<status status="PASS" start="2026-04-28T08:14:16.936630" elapsed="0.174642"/>
 </kw>
 <doc>Closes the browser</doc>
-<status status="PASS" start="2026-04-28T08:06:46.267365" elapsed="0.150217"/>
+<status status="PASS" start="2026-04-28T08:14:16.935854" elapsed="0.175661"/>
 </kw>
 <doc>Test HTML injection attempt</doc>
-<status status="PASS" start="2026-04-28T08:06:32.737897" elapsed="13.679870"/>
+<status status="PASS" start="2026-04-28T08:14:03.291448" elapsed="13.820272"/>
 </test>
 <test id="s1-t9" name="Scenario: Login with unicode characters" line="70">
 <kw name="Given I am on the Mobak login page">
 <kw name="Open Mobak Login Page" owner="login_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:46.420632" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<msg time="2026-04-28T08:14:17.115625" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-28T08:06:46.420129" elapsed="1.902707"/>
+<status status="PASS" start="2026-04-28T08:14:17.114887" elapsed="1.935131"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-28T08:06:48.323146" elapsed="0.062418"/>
+<status status="PASS" start="2026-04-28T08:14:19.050375" elapsed="0.071581"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USER_FIELD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-28T08:06:48.385930" elapsed="0.113059"/>
+<status status="PASS" start="2026-04-28T08:14:19.122347" elapsed="0.148416"/>
 </kw>
 <doc>Opens the browser and navigates to login page</doc>
-<status status="PASS" start="2026-04-28T08:06:46.419629" elapsed="2.079554"/>
+<status status="PASS" start="2026-04-28T08:14:17.114066" elapsed="2.156901"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:46.419069" elapsed="2.080230"/>
+<status status="PASS" start="2026-04-28T08:14:17.113274" elapsed="2.157816"/>
 </kw>
 <kw name="When I fill credentials">
 <kw name="Input Username" owner="login_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:48.501176" level="INFO">Typing text '用户测试' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
+<msg time="2026-04-28T08:14:19.273077" level="INFO">Typing text '用户测试' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
 <arg>${USER_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:48.500795" elapsed="0.227786"/>
+<status status="PASS" start="2026-04-28T08:14:19.272684" elapsed="0.213383"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-28T08:06:48.500318" elapsed="0.228467"/>
+<status status="PASS" start="2026-04-28T08:14:19.272184" elapsed="0.214089"/>
 </kw>
 <kw name="Input User Password" owner="login_resources">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:48.730063" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
-<msg time="2026-04-28T08:06:48.799540" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-28T08:14:19.487572" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
+<msg time="2026-04-28T08:14:19.556606" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASS_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:48.729679" elapsed="0.175264"/>
+<status status="PASS" start="2026-04-28T08:14:19.487159" elapsed="0.174241"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-28T08:06:48.729094" elapsed="0.176167"/>
+<status status="PASS" start="2026-04-28T08:14:19.486620" elapsed="0.175245"/>
 </kw>
 <arg>用户测试</arg>
 <arg>пароль123</arg>
-<status status="PASS" start="2026-04-28T08:06:48.499773" elapsed="0.405609"/>
+<status status="PASS" start="2026-04-28T08:14:19.271556" elapsed="0.390471"/>
 </kw>
 <kw name="And I click the login button">
 <kw name="Submit Login" owner="login_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:48.907463" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
+<msg time="2026-04-28T08:14:19.664020" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:06:48.906996" elapsed="0.192385"/>
+<status status="PASS" start="2026-04-28T08:14:19.663662" elapsed="0.173616"/>
 </kw>
 <doc>Clicks the login button</doc>
-<status status="PASS" start="2026-04-28T08:06:48.906471" elapsed="0.193137"/>
+<status status="PASS" start="2026-04-28T08:14:19.663252" elapsed="0.174320"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:48.905857" elapsed="0.193893"/>
+<status status="PASS" start="2026-04-28T08:14:19.662705" elapsed="0.175042"/>
 </kw>
 <kw name="Then I should see an error message or invalid login">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:54.391755" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-140.png"&gt;&lt;img src="selenium-screenshot-140.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:54.392059" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:14:25.160932" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-168.png"&gt;&lt;img src="selenium-screenshot-168.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:25.161249" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:06:49.101816" elapsed="5.291074">Element 'css=.error-message' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:14:19.840102" elapsed="5.322068">Element 'css=.error-message' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:06:54.393192" level="INFO">${check1} = False</msg>
+<msg time="2026-04-28T08:14:25.162551" level="INFO">${check1} = False</msg>
 <var>${check1}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:49.100888" elapsed="5.292361"/>
+<status status="PASS" start="2026-04-28T08:14:19.839324" elapsed="5.323289"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:59.667395" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-141.png"&gt;&lt;img src="selenium-screenshot-141.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:59.667652" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:14:30.456638" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-169.png"&gt;&lt;img src="selenium-screenshot-169.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:30.456871" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:06:54.394140" elapsed="5.274211">Element 'css=[class*='error']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:14:25.163561" elapsed="5.294044">Element 'css=[class*='error']' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:06:59.668615" level="INFO">${check2} = False</msg>
+<msg time="2026-04-28T08:14:30.457865" level="INFO">${check2} = False</msg>
 <var>${check2}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:54.393538" elapsed="5.275132"/>
+<status status="PASS" start="2026-04-28T08:14:25.162899" elapsed="5.295026"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:59.900256" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-142.png"&gt;&lt;img src="selenium-screenshot-142.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:06:59.900528" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
+<msg time="2026-04-28T08:14:30.702611" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-170.png"&gt;&lt;img src="selenium-screenshot-170.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:30.702843" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
 <arg>Invalid</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-28T08:06:59.669556" elapsed="0.231492">Page should have contained text 'Invalid' but did not.</status>
+<status status="FAIL" start="2026-04-28T08:14:30.458942" elapsed="0.244417">Page should have contained text 'Invalid' but did not.</status>
 </kw>
-<msg time="2026-04-28T08:06:59.901309" level="INFO">${check3} = False</msg>
+<msg time="2026-04-28T08:14:30.703622" level="INFO">${check3} = False</msg>
 <var>${check3}</var>
 <arg>Page Should Contain</arg>
 <arg>Invalid</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:59.668934" elapsed="0.232431"/>
+<status status="PASS" start="2026-04-28T08:14:30.458181" elapsed="0.245495"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:06:59.931377" level="INFO">Current page contains text 'erro'.</msg>
+<msg time="2026-04-28T08:14:30.732301" level="INFO">Current page contains text 'erro'.</msg>
 <arg>erro</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-04-28T08:06:59.902380" elapsed="0.029185"/>
+<status status="PASS" start="2026-04-28T08:14:30.704527" elapsed="0.027967"/>
 </kw>
-<msg time="2026-04-28T08:06:59.931801" level="INFO">${check4} = True</msg>
+<msg time="2026-04-28T08:14:30.732736" level="INFO">${check4} = True</msg>
 <var>${check4}</var>
 <arg>Page Should Contain</arg>
 <arg>erro</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:06:59.901739" elapsed="0.030116"/>
+<status status="PASS" start="2026-04-28T08:14:30.703927" elapsed="0.028861"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${check1} == True or ${check2} == True or ${check3} == True or ${check4} == True</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-04-28T08:06:59.932096" elapsed="0.000899"/>
+<status status="PASS" start="2026-04-28T08:14:30.733024" elapsed="0.000894"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:06:49.100278" elapsed="10.832860"/>
+<status status="PASS" start="2026-04-28T08:14:19.838490" elapsed="10.895568"/>
 </kw>
 <kw name="Close Session" owner="login_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-28T08:06:59.934028" elapsed="0.145993"/>
+<status status="PASS" start="2026-04-28T08:14:30.734980" elapsed="0.145332"/>
 </kw>
 <doc>Closes the browser</doc>
-<status status="PASS" start="2026-04-28T08:06:59.933595" elapsed="0.146618"/>
+<status status="PASS" start="2026-04-28T08:14:30.734517" elapsed="0.146047"/>
 </kw>
 <doc>Test unicode characters in fields</doc>
-<status status="PASS" start="2026-04-28T08:06:46.418263" elapsed="13.662135"/>
+<status status="PASS" start="2026-04-28T08:14:17.112321" elapsed="13.768429"/>
 </test>
 <test id="s1-t10" name="Scenario: Login with invalid credentials" line="77">
 <kw name="Given I am on the Mobak login page">
 <kw name="Open Mobak Login Page" owner="login_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:07:00.083048" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
+<msg time="2026-04-28T08:14:30.883504" level="INFO">Opening browser 'chrome' to base url 'https://lampi.ifce.edu.br/mobak/login'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-28T08:07:00.082665" elapsed="1.886378"/>
+<status status="PASS" start="2026-04-28T08:14:30.883053" elapsed="1.946696"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-28T08:07:01.969362" elapsed="0.113765"/>
+<status status="PASS" start="2026-04-28T08:14:32.830082" elapsed="0.055455"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${USER_FIELD}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-28T08:07:02.083574" elapsed="0.110545"/>
+<status status="PASS" start="2026-04-28T08:14:32.885843" elapsed="0.124083"/>
 </kw>
 <doc>Opens the browser and navigates to login page</doc>
-<status status="PASS" start="2026-04-28T08:07:00.082219" elapsed="2.112106"/>
+<status status="PASS" start="2026-04-28T08:14:30.882652" elapsed="2.127595"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:07:00.081718" elapsed="2.112758"/>
+<status status="PASS" start="2026-04-28T08:14:30.882098" elapsed="2.128381"/>
 </kw>
 <kw name="When I fill credentials">
 <kw name="Input Username" owner="login_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:07:02.196377" level="INFO">Typing text 'usuario_invalido' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
+<msg time="2026-04-28T08:14:33.013153" level="INFO">Typing text 'usuario_invalido' into text field 'xpath=/html/body/div/main/div/div/form/div[1]/div/input'.</msg>
 <arg>${USER_FIELD}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:07:02.195997" elapsed="0.234639"/>
+<status status="PASS" start="2026-04-28T08:14:33.012727" elapsed="0.262743"/>
 </kw>
 <arg>${user}</arg>
-<status status="PASS" start="2026-04-28T08:07:02.195539" elapsed="0.235302"/>
+<status status="PASS" start="2026-04-28T08:14:33.012040" elapsed="0.263703"/>
 </kw>
 <kw name="Input User Password" owner="login_resources">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:07:02.432082" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
-<msg time="2026-04-28T08:07:02.495703" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2026-04-28T08:14:33.277164" level="INFO">Typing password into text field 'xpath=/html/body/div/main/div/div/form/div[2]/div/input'.</msg>
+<msg time="2026-04-28T08:14:33.343489" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASS_FIELD}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:07:02.431695" elapsed="0.169868"/>
+<status status="PASS" start="2026-04-28T08:14:33.276765" elapsed="0.173448"/>
 </kw>
 <arg>${pass}</arg>
-<status status="PASS" start="2026-04-28T08:07:02.431140" elapsed="0.170610"/>
+<status status="PASS" start="2026-04-28T08:14:33.276128" elapsed="0.174275"/>
 </kw>
 <arg>usuario_invalido</arg>
 <arg>senha_errada</arg>
-<status status="PASS" start="2026-04-28T08:07:02.194944" elapsed="0.407046"/>
+<status status="PASS" start="2026-04-28T08:14:33.011076" elapsed="0.439627"/>
 </kw>
 <kw name="And I click the login button">
 <kw name="Submit Login" owner="login_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:07:02.603856" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
+<msg time="2026-04-28T08:14:33.452787" level="INFO">Clicking button 'xpath=/html/body/div/main/div/div/form/button'.</msg>
 <arg>${LOGIN_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-28T08:07:02.603393" elapsed="0.170217"/>
+<status status="PASS" start="2026-04-28T08:14:33.452371" elapsed="0.167950"/>
 </kw>
 <doc>Clicks the login button</doc>
-<status status="PASS" start="2026-04-28T08:07:02.602993" elapsed="0.170850"/>
+<status status="PASS" start="2026-04-28T08:14:33.451967" elapsed="0.168627"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:07:02.602484" elapsed="0.171483"/>
+<status status="PASS" start="2026-04-28T08:14:33.451326" elapsed="0.169396"/>
 </kw>
 <kw name="Then I should see an error message or invalid login">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:07:08.077212" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-143.png"&gt;&lt;img src="selenium-screenshot-143.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:07:08.077499" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:14:38.935335" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-171.png"&gt;&lt;img src="selenium-screenshot-171.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:38.935624" level="FAIL">Element 'css=.error-message' not visible after 5 seconds.</msg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:07:02.775822" elapsed="5.302388">Element 'css=.error-message' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:14:33.622422" elapsed="5.313927">Element 'css=.error-message' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:07:08.078505" level="INFO">${check1} = False</msg>
+<msg time="2026-04-28T08:14:38.936706" level="INFO">${check1} = False</msg>
 <var>${check1}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=.error-message</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:07:02.775092" elapsed="5.303471"/>
+<status status="PASS" start="2026-04-28T08:14:33.621743" elapsed="5.315023"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:07:13.390434" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-144.png"&gt;&lt;img src="selenium-screenshot-144.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:07:13.390691" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
+<msg time="2026-04-28T08:14:44.259725" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-172.png"&gt;&lt;img src="selenium-screenshot-172.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:44.259998" level="FAIL">Element 'css=[class*='error']' not visible after 5 seconds.</msg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2026-04-28T08:07:08.079469" elapsed="5.312269">Element 'css=[class*='error']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2026-04-28T08:14:38.937693" elapsed="5.323220">Element 'css=[class*='error']' not visible after 5 seconds.</status>
 </kw>
-<msg time="2026-04-28T08:07:13.392039" level="INFO">${check2} = False</msg>
+<msg time="2026-04-28T08:14:44.261213" level="INFO">${check2} = False</msg>
 <var>${check2}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>css=[class*='error']</arg>
 <arg>timeout=${timeout}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:07:08.078825" elapsed="5.313277"/>
+<status status="PASS" start="2026-04-28T08:14:38.937041" elapsed="5.324229"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:07:13.616083" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-145.png"&gt;&lt;img src="selenium-screenshot-145.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-04-28T08:07:13.616340" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
+<msg time="2026-04-28T08:14:44.503487" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-173.png"&gt;&lt;img src="selenium-screenshot-173.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T08:14:44.503785" level="FAIL">Page should have contained text 'Invalid' but did not.</msg>
 <arg>Invalid</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2026-04-28T08:07:13.393001" elapsed="0.223913">Page should have contained text 'Invalid' but did not.</status>
+<status status="FAIL" start="2026-04-28T08:14:44.262288" elapsed="0.242233">Page should have contained text 'Invalid' but did not.</status>
 </kw>
-<msg time="2026-04-28T08:07:13.617171" level="INFO">${check3} = False</msg>
+<msg time="2026-04-28T08:14:44.504852" level="INFO">${check3} = False</msg>
 <var>${check3}</var>
 <arg>Page Should Contain</arg>
 <arg>Invalid</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:07:13.392374" elapsed="0.224852"/>
+<status status="PASS" start="2026-04-28T08:14:44.261569" elapsed="0.243358"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-04-28T08:07:13.642318" level="INFO">Current page contains text 'erro'.</msg>
+<msg time="2026-04-28T08:14:44.529197" level="INFO">Current page contains text 'erro'.</msg>
 <arg>erro</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-04-28T08:07:13.618119" elapsed="0.024382"/>
+<status status="PASS" start="2026-04-28T08:14:44.506206" elapsed="0.023160"/>
 </kw>
-<msg time="2026-04-28T08:07:13.642735" level="INFO">${check4} = True</msg>
+<msg time="2026-04-28T08:14:44.529668" level="INFO">${check4} = True</msg>
 <var>${check4}</var>
 <arg>Page Should Contain</arg>
 <arg>erro</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-04-28T08:07:13.617516" elapsed="0.025272"/>
+<status status="PASS" start="2026-04-28T08:14:44.505283" elapsed="0.024461"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${check1} == True or ${check2} == True or ${check3} == True or ${check4} == True</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-04-28T08:07:13.643029" elapsed="0.000905"/>
+<status status="PASS" start="2026-04-28T08:14:44.530035" elapsed="0.001104"/>
 </kw>
-<status status="PASS" start="2026-04-28T08:07:02.774477" elapsed="10.869602"/>
+<status status="PASS" start="2026-04-28T08:14:33.621206" elapsed="10.910146"/>
 </kw>
 <kw name="Close Session" owner="login_resources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-28T08:07:13.645017" elapsed="0.164930"/>
+<status status="PASS" start="2026-04-28T08:14:44.532481" elapsed="0.146570"/>
 </kw>
 <doc>Closes the browser</doc>
-<status status="PASS" start="2026-04-28T08:07:13.644560" elapsed="0.165576"/>
+<status status="PASS" start="2026-04-28T08:14:44.531917" elapsed="0.147329"/>
 </kw>
 <doc>Test wrong username and password</doc>
-<status status="PASS" start="2026-04-28T08:07:00.080897" elapsed="13.729407"/>
+<status status="PASS" start="2026-04-28T08:14:30.881262" elapsed="13.798182"/>
 </test>
-<status status="FAIL" start="2026-04-28T08:05:05.089035" elapsed="128.722098"/>
+<status status="FAIL" start="2026-04-28T08:12:36.679716" elapsed="128.000591"/>
 </suite>
 <statistics>
 <total>
