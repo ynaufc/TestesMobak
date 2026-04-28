@@ -1,0 +1,2 @@
+abrir log: xdg-open /home/any/Área\ de\ trabalho/TestesMobak/bugs/280426/log.html
+abrir report: xdg-open /home/any/Área\ de\ trabalho/TestesMobak/bugs/280426/report.html
