@@ -1,5 +1,6 @@
 *** Settings ***
-Resource    login_resources.robot
+Library    SeleniumLibrary
+Resource   login_resources.robot
 Test Teardown    Close Session
 
 *** Variables ***
