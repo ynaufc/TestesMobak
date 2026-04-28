@@ -1,6 +1,5 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    WebDriverManager
 
 *** Variables ***
 ${BROWSER}        chrome
