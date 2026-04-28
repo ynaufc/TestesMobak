@@ -12,7 +12,10 @@ ${DASHBOARD_EL}   xpath=//h1
 *** Keywords ***
 Open Mobak Login Page
     [Documentation]    Opens the browser and navigates to login page
-    Open Browser    ${URL}    ${BROWSER}
+    ${opts}=    Evaluate    sys.modules['selenium'].webdriver.ChromeOptions()    sys
+    Call Method    ${opts}    add_argument    --disable-dev-shm-usage
+    Call Method    ${opts}    add_argument    --no-sandbox
+    Open Browser    ${URL}    ${BROWSER}    options=${opts}
     Maximize Browser Window
     Wait Until Element Is Visible    ${USER_FIELD}    timeout=10s
 

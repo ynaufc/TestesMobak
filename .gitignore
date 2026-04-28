@@ -1,4 +1,9 @@
 venv/
-output.xml
+__pycache__/
+*.pyc
+*.log
+*.xml
 report.html
 log.html
+output.xml
+selenium-screenshot-*.png
