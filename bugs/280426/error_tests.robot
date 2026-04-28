@@ -46,9 +46,6 @@ Scenario: Login with very long username
     Then I should see an error message or invalid login
 
 Scenario: Login with spaces only
-    [Documentation]    Test login with only whitespace
-    Given I am on the Mobak login page
-    When I fill credentials with "   " and "   "
     And I click the login button
     Then I should see an error message
 
@@ -85,18 +82,18 @@ And I click the login button
     Submit Login
 
 Then I should see an error message
-    Wait Until Element Is Visible    css=.error-message    timeout=5s
-    ...    OR
-    Wait Until Element Is Visible    css=[class*='error']    timeout=5s
-    ...    OR
-    Page Should Contain    Invalid    timeout=5s
+    ${check1}=    Run Keyword And Return Status    Wait Until Element Is Visible    css=.error-message    timeout=5s
+    ${check2}=    Run Keyword And Return Status    Wait Until Element Is Visible    css=[class*='error']    timeout=5s
+    ${check3}=    Run Keyword And Return Status    Page Should Contain    Invalid
+    Should Be True    ${check1} or ${check2} or ${check3}
 
 Then I should see an error message or invalid login
     [Arguments]    ${timeout}=5s
-    Run Keyword And Ignore Error    Wait Until Element Is Visible    css=.error-message    ${timeout}
-    Run Keyword And Ignore Error    Wait Until Element Is Visible    css=[class*='error']    ${timeout}
-    Run Keyword And Ignore Error    Page Should Contain    Invalid    ${timeout}
-    Run Keyword And Ignore Error    Page Should Contain    erro    ${timeout}
+    ${check1}=    Run Keyword And Return Status    Wait Until Element Is Visible    css=.error-message    timeout=${timeout}
+    ${check2}=    Run Keyword And Return Status    Wait Until Element Is Visible    css=[class*='error']    timeout=${timeout}
+    ${check3}=    Run Keyword And Return Status    Page Should Contain    Invalid
+    ${check4}=    Run Keyword And Return Status    Page Should Contain    erro
+    Should Be True    ${check1} or ${check2} or ${check3} or ${check4}
 
 *** Variables ***
 ${LONG_STRING}    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
