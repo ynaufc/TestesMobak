@@ -6,4 +6,5 @@ __pycache__/
 report.html
 log.html
 output.xml
+abrirnoterminalcods.txt
 selenium-screenshot-*.png
