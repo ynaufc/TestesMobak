@@ -1,0 +1,87 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[portuguese]{babel}
+\usepackage[top=3.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection.}{1em}{}
+
+\title{\vspace{-2cm}\textbf{\Large Especificação de Casos de Teste (POC): Sistema Mobak}}
+\author{\textbf{Any Mélani Fernandes Vieira$^1$}}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-1.5cm}
+\begin{center}
+$^1$Laboratório LAMPI -- Estagiária de Testes de Software
+\end{center}
+\vspace{0.5cm}
+\begin{quote}
+\small
+\textbf{Resumo.} Este documento apresenta a Prova de Conceito (POC) referente à especificação de casos de teste para o sistema Mobak, desenvolvida no contexto do estágio em Qualidade de Software no laboratório LAMPI. O artefato propõe uma suíte de 30 cenários estruturados em categorias de validação positiva, negativa, segurança, permissões e regras de negócio. A modelagem concentra-se na delimitação de escopo e documentação das diretrizes de validação, segmentadas por módulos, visando fundamentar o ciclo de automação subsequente.
+\end{quote}
+
+\section{Introdução}
+A garantia da qualidade em sistemas de software exige uma abordagem sistemática para a identificação de anomalias e mitigação de falhas. Neste contexto, este documento estabelece a especificação inicial de testes do sistema Mobak, operando como uma Prova de Conceito (POC) para a arquitetura de validação.
+
+A metodologia adotada foca na elicitação de cenários críticos e na estruturação lógica dos testes de caixa-preta, não abordando, neste estágio primário, a codificação dos \textit{scripts}. A especificação abrange as dimensões de autenticação, gestão de perfis, manipulação de registros de domínio e geração de relatórios, com o intuito de consolidar uma base documental técnica padronizada.
+
+\section{Modelagem dos Casos de Teste}
+A seguir, são detalhados 30 casos de teste conceituais, organizados conforme os módulos funcionais da aplicação Mobak.
+
+\subsection{Módulo 1: Autenticação e Segurança}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{CT01 - Autenticação com identificador nulo (Cenário Negativo):} Avaliar o comportamento do módulo de login mediante a submissão do formulário com ausência de dados no campo de usuário.
+    \item \textbf{CT02 - Autenticação com credencial de senha nula (Cenário Negativo):} Verificar o bloqueio de acesso ao submeter o formulário sem o preenchimento da chave de segurança.
+    \item \textbf{CT03 - Submissão de caracteres não-alfanuméricos (Cenário de Validação):} Mensurar a robustez da validação de entrada inserindo caracteres especiais do tipo emoji no campo de usuário.
+    \item \textbf{CT04 - Inserção de caracteres especiais não autorizados (Cenário de Validação):} Testar a sanitização de dados inserindo símbolos fora do padrão permitido no formulário.
+    \item \textbf{CT05 - Tentativa de injeção de dependência via SQL (Cenário de Segurança):} Avaliar a resiliência do banco de dados contra vetores de ataque, injetando sintaxe SQL no campo de usuário.
+    \item \textbf{CT06 - Violação de limite de caracteres (Cenário de Validação):} Examinar o comportamento do sistema ante o transbordamento de buffer, submetendo uma cadeia de caracteres superior ao limite alocado na coluna.
+    \item \textbf{CT07 - Validação de entradas contendo apenas espaços (Cenário de Validação):} Verificar o algoritmo de limpeza do sistema ao receber cadeias compostas estritamente por espaços em branco.
+    \item \textbf{CT08 - Ataque de \textit{Cross-Site Scripting} - XSS (Cenário de Segurança):} Testar a proteção contra execução de \textit{scripts} maliciosos no lado do cliente inserindo \textit{tags} de marcação e execução nas entradas.
+    \item \textbf{CT09 - Suporte a codificação Unicode (Cenário de Validação):} Validar a aceitação e o processamento de caracteres pertencentes a alfabetos internacionais.
+    \item \textbf{CT10 - Autenticação com credenciais divergentes (Cenário Negativo):} Certificar a rejeição do acesso ao processar uma combinação de usuário e senha não mapeada na base de dados.
+    \item \textbf{CT11 - Autenticação bem-sucedida (Cenário Positivo):} Homologar o fluxo principal de autorização e o redirecionamento adequado para o painel de controle.
+    \item \textbf{CT12 - Restrição temporária por força bruta (Regra de Negócio):} Validar a aplicação da política de segurança que bloqueia a conta após sucessivas falhas de autenticação.
+    \item \textbf{CT13 - Fluxo de recuperação de senha (Cenário Positivo):} Comprovar o disparo correto do serviço de e-mail transacional para redefinição de acesso.
+\end{itemize}
+
+\subsection{Módulo 2: Gestão de Identidade e Perfis}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{CT14 - Acesso aos dados cadastrais (Cenário Positivo):} Assegurar que a sessão autenticada possui autorização para recuperar e renderizar as informações do próprio usuário.
+    \item \textbf{CT15 - Validação de expressão regular de e-mail (Cenário de Validação):} Constatar o bloqueio de atualizações cadastrais quando o endereço de correio eletrônico não obedece à especificação padrão da RFC.
+    \item \textbf{CT16 - Violação de controle de acesso indireto - IDOR (Cenário de Permissão):} Certificar que o sistema responde com erro de autorização HTTP 403 ante a tentativa de manipulação de parâmetros da URL para acessar perfis de terceiros.
+    \item \textbf{CT17 - Duplicidade de chave única (Cenário Negativo):} Garantir o cumprimento da restrição de integridade da base, impedindo o registro de múltiplos usuários sob o mesmo e-mail.
+    \item \textbf{CT18 - Direito ao esquecimento e descarte de dados (Regra de Negócio):} Validar os procedimentos de exclusão lógica ou anonimização de dados sensíveis mediante a solicitação de deleção da conta.
+\end{itemize}
+
+\subsection{Módulo 3: Operações CRUD de Registros}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{CT19 - Persistência de entidade completa (Cenário Positivo):} Homologar a inserção de um novo registro na base de dados após o preenchimento de todos os atributos requeridos.
+    \item \textbf{CT20 - Restrição de nulidade em atributos (Cenário de Validação):} Verificar o acionamento das mensagens de \textit{feedback} visuais ao omitir dados obrigatórios no formulário de criação.
+    \item \textbf{CT21 - Atualização parcial de entidade (Cenário Positivo):} Comprovar a eficácia do método de atualização, garantindo que a mutação de um atributo específico não interfira no estado das demais propriedades do objeto.
+    \item \textbf{CT22 - Remoção de registro (Cenário Positivo):} Confirmar a execução da deleção de uma entidade e sua consequente abstenção nas listagens do sistema.
+    \item \textbf{CT23 - Proteção de rotas privadas (Cenário de Permissão):} Assegurar que requisições não autenticadas direcionadas ao módulo de listagem são interceptadas pelo \textit{middleware} e redirecionadas para a interface de autorização.
+    \item \textbf{CT24 - Algoritmo de paginação de dados (Cenário Positivo):} Validar a segmentação escalar do conjunto de resultados e o comportamento correto dos controladores de navegação inter-páginas.
+    \item \textbf{CT25 - Consulta com resultado de conjunto vazio (Cenário Negativo):} Avaliar o tratamento de exceções visuais e textuais quando o motor de busca não localiza correspondências para a chave de consulta informada.
+    \item \textbf{CT26 - Sanitização de parâmetros de busca (Cenário de Validação):} Monitorar o comportamento do algoritmo de consulta textual ao processar metacaracteres operacionais.
+\end{itemize}
+
+\subsection{Módulo 4: Análise e Exportação de Dados}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{CT27 - Processamento de filtros temporais (Cenário Positivo):} Atestar a precisão analítica da consolidação de dados ao delimitar o intervalo da busca com instâncias temporais válidas.
+    \item \textbf{CT28 - Inconsistência cronológica em filtros (Cenário de Validação):} Confirmar o bloqueio da requisição de relatório caso o limite inferior cronológico exceda o limite superior.
+    \item \textbf{CT29 - Exportação nula de relatórios (Regra de Negócio):} Validar a indisponibilidade da rotina de extração de arquivos quando o escopo da consulta retorna um vetor de dados nulo.
+    \item \textbf{CT30 - Segregação de privilégios gerenciais (Cenário de Permissão):} Certificar que instâncias de usuário configuradas com privilégios operacionais restritos não detêm visibilidade do módulo de relatórios analíticos.
+\end{itemize}
+
+\section{Conclusão}
+A modelagem conceitual dos cenários de teste propostos estabelece um referencial normativo metodológico para a garantia da qualidade do sistema Mobak. A documentação dos casos de teste elencados propicia uma cobertura preditiva das funcionalidades-chave da aplicação, mapeando proativamente vetores de vulnerabilidade de segurança, gargalos de integridade referencial e desvios nas regras de negócio. Conclui-se que o escopo definido confere fundamentação lógica e arquitetural apropriada para embasar as etapas adjacentes do ciclo de desenvolvimento, as quais compreenderão a engenharia e integração dos \textit{scripts} de automação na arquitetura do \textit{Robot Framework}.
+
+\end{document}

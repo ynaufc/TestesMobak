@@ -24,5 +24,4 @@ Este repositório contém a documentação e os resultados da bateria de testes 
 Abaixo estão listados os relatórios detalhados de cada bateria de testes realizada, organizados por data:
 
 * **[Relatório de Testes - 07/04/2026](./bugs/070426/070426.md)** - Foco: Cadastro de usuários, gerenciamento de turmas e upload de perfil.
-
-
+* **[Especificação de Casos de Teste (POC) - 27/05/2026](./docs/Esp_TestesMobak.pdf)** - Foco: Modelagem de 30 cenários cobrindo autenticação, perfis, registros e relatórios.
