@@ -1,16 +1,9 @@
 *** Settings ***
-Library    SeleniumLibrary
-
-*** Variables ***
-${BROWSER}        chrome
-${URL}            https://lampi.ifce.edu.br/mobak/login
-${USER_FIELD}     xpath=/html/body/div/main/div/div/form/div[1]/div/input
-${PASS_FIELD}     xpath=/html/body/div/main/div/div/form/div[2]/div/input
-${LOGIN_BUTTON}   xpath=/html/body/div/main/div/div/form/button
-${DASHBOARD_EL}   xpath=//h1
-
+Library     SeleniumLibrary
+Resource    variables.robot
 
 *** Keywords ***
+
 Open Mobak Login Page
     [Documentation]    Opens the browser and navigates to login page
     ${opts}=    Evaluate    sys.modules['selenium'].webdriver.ChromeOptions()    sys
@@ -39,3 +32,30 @@ Verify Successful Login
 Close Session
     [Documentation]    Closes the browser
     Close Browser
+
+Realizar Login Com Sucesso
+    [Documentation]    Executa o fluxo completo de autenticação com dados válidos
+    Given Open Mobak Login Page
+    When Input Username         ${USER_VALIDO}
+    And Input User Password     ${SENHA_VALIDA}
+    And Submit Login
+    Then Verify Successful Login
+
+Realizar Login Como Operador Restrito
+    [Documentation]    Executa o login utilizando uma conta sem privilégios administrativos
+    Given Open Mobak Login Page
+    When Input Username         ${USER_OPERADOR}
+    And Input User Password     ${SENHA_VALIDA}
+    And Submit Login
+    Then Verify Successful Login
+
+Realizar Logout
+    [Documentation]    Encerra a sessão atual e verifica o redirecionamento para o formulário
+    Click Link                       ${LOGOUT_BTN}
+    Wait Until Element Is Visible    ${USER_FIELD}    timeout=10s
+
+Ir Para Pagina de Cadastro
+    [Documentation]    Acessa o ambiente a partir do login e direciona à tela de registro
+    Open Mobak Login Page
+    Click Link                       ${REGISTER_BTN}
+    Wait Until Element Is Visible    ${NEW_EMAIL_FIELD}    timeout=10s
