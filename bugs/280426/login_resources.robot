@@ -9,6 +9,7 @@ ${PASS_FIELD}     xpath=/html/body/div/main/div/div/form/div[2]/div/input
 ${LOGIN_BUTTON}   xpath=/html/body/div/main/div/div/form/button
 ${DASHBOARD_EL}   xpath=//h1
 
+
 *** Keywords ***
 Open Mobak Login Page
     [Documentation]    Opens the browser and navigates to login page

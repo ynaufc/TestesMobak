@@ -1,2 +1,12 @@
 abrir log: xdg-open /home/any/Área\ de\ trabalho/TestesMobak/bugs/280426/log.html
 abrir report: xdg-open /home/any/Área\ de\ trabalho/TestesMobak/bugs/280426/report.html
+
+
+git branch -> mostra a branch q eu trabalho
+git recount main -> troca pra main
+git checkout *nome da branch*-> troca a branch
+git checkout -b (nome da nova branch) -> cria nova branch
+(garantir que nao está na main)
+nome da branch deve ser codigo da task 
+git push -u origin (nome da branch atual)
+git commit normal
